@@ -1,0 +1,5 @@
+Paletra de Cores da Logo
+
+#2BC699 (azul esverdeado)
+#88DE68 (verde)
+#D7E6F0 (leve tom de branco)

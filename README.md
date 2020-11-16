@@ -1,2 +1,1 @@
-# Akz
-Projeto e Desenvolvimento Akz
+# Prazer, Vinicius Akz
