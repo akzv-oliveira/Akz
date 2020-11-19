@@ -49,7 +49,7 @@ header {
 .conteudo {
     width:100%;
     height:100vh;
-    /* background-color:rgb(165, 164, 164); */
+    background-color:rgb(165, 164, 164);
 }
 /* ----------------------------------------------- */
 
@@ -58,6 +58,7 @@ header {
     position:absolute;
     z-index:1;
     width:100%;
+    background-color:white;
     /* padding-bottom: 10000px; */
     /* height:500px; */
     /* background-image: url(../img/CSGO\ Fundo.png);
@@ -71,6 +72,17 @@ header {
    
 }
 
+/* ----------------------------------------------- */
+
+/* -------------------WELCOME--------------------- */
+.welcome {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    
+}
 /* ----------------------------------------------- */
 
 /* -----------------SUB HEADER-------------------- */
@@ -151,13 +163,13 @@ header {
     align-items:center;
     justify-content:center;
     width:100%;
-    height:450px;
+    height:400px;
     /* background-color:red; */
 }
 
 .conteudo-video video{
     /* position:relative; */
-    width:700px;
+    width:600px;
     padding-bottom:40px;
     border-radius: 30px;
 }
@@ -168,5 +180,47 @@ header {
     font-size: 60px;
     text-align:center;
     padding-bottom:40px;
+}
+/* ----------------------------------------------- */
+
+/* --------------------CSGO----------------------- */
+.CSGO {
+    /* position:absolute;
+    z-index:6; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:500px;
+    background-color:rgb(27, 27, 27);
+    /* background-image:url(../img/Fundo\ CSGO.jpg);
+    background-position:top;
+    background-size: cover; */
+}
+
+.sobre-mae{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width:50%;
+    height:500px;
+    /* background-color:red; */
+}
+.sobre-img img{
+    width:400px;
+}
+
+.sobre-text {
+    color:white;
+    text-align:center;
+    padding: 0 40px 0 40px;
+}
+
+.valores-mae{
+    width:50%;
+    height:500px;
+    /* background-color:blue; */
+
 }
 /* ----------------------------------------------- */
