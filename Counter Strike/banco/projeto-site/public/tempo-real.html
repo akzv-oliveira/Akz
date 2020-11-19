@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página com exemplo de gráfico p/ tempo real</title>
+
+    <!-- script do google charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
+    
+    <style>
+        /* Classes CSS para exemplos de alertas */
+
+        .normal {
+            background-color: white;
+        }
+
+        .alerta-alto {
+            background-color:tomato;
+        }
+
+        .alerta-baixo {
+            background-color:aquamarine;
+        }
+    </style>
+
+</head>
+
+<body onload="atualizacaoPeriodica()">
+    <div>
+        Olá, <b id="b_usuario"></b>  
+        <a href="#" onclick="logoff()" style="color:maroon">[Sair]</a>
+
+        <a href="grafico-chartjs.html">Gráfico de histórico recente</a>
+    </div>
+    
+    <div style="width:75%;">
+        <div id="div_temperatura">Temperatura sendo obtida...</div>
+        <div id="div_umidade">Umidade sendo obtida...</div>
+    </div>
+
+    <div id="div_alerta_temperatura"></div>
+    <div id="div_alerta_umidade"></div>
+</body>
+
+</html>
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+
+    // só mexer se quiser alterar o tempo de atualização
+    // ou se souber o que está fazendo!
+    function atualizacaoPeriodica() {
+        obterDados();
+        setTimeout(atualizacaoPeriodica, 5000);
+    }   
+
+    // altere aqui como os dados serão exibidos
+    // e como são recuperados do BackEnd
+    function obterDados() {
+        var dados;
+
+        fetch('/leituras/tempo-real', {cache:'no-store'}).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+
+                    // aqui, após registro. use os nomes 
+                    // dos atributos que vem no JSON 
+                    var dados = {
+                        temperatura: resposta.temperatura,
+                        umidade: resposta.umidade
+                    }
+                    
+                    alertar(resposta.temperatura, resposta.umidade);
+                    atualizarTela(dados);
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+        .catch(function (error) {
+            console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+        });
+
+    }
+
+    function alertar(temperatura, umidade) {
+        // ideal que venham de algum EndPoint
+        var limites = { 
+            max_temperatura: 40,
+            min_temperatura: 20,
+            max_umidade: 80,
+            min_umidade: 50,            
+        };
+
+        var mensagem_temperatura = '';
+        var mensagem_umidade = '';
+
+        var classe_temperatura = '';
+        var classe_umidade = '';
+
+        if (temperatura > limites.max_temperatura) {
+            mensagem_temperatura += '* Temperatura alta demais! <br>';
+            classe_temperatura = 'alerta-alto';
+        } 
+        if (umidade > limites.max_umidade) {
+            mensagem_umidade += '* Umidade alta demais! <br>';
+            classe_umidade = 'alerta-alto';
+        } 
+        if (temperatura < limites.min_temperatura) {
+            mensagem_temperatura = '* Temperatura baixa demais! <br>';
+            classe_temperatura = 'alerta-baixo';
+        } 
+        if (umidade < limites.min_umidade) {
+            mensagem_umidade = '* Umidade baixa demais! <br>';
+            classe_umidade = 'alerta-baixo';
+        }
+        
+        div_alerta_temperatura.innerHTML = mensagem_temperatura;
+        div_alerta_temperatura.className = classe_temperatura;
+
+        div_alerta_umidade.innerHTML = mensagem_umidade;
+        div_alerta_umidade.className = classe_umidade;
+    }
+
+    // só altere aqui se souber o que está fazendo!
+    function atualizarTela(dados) {
+        console.log('iniciando atualização da tela...');
+
+        div_temperatura.innerHTML = `Temperatura: ${dados.temperatura}º`;
+
+        div_umidade.innerHTML = `Umidade: ${dados.umidade}%`;
+        
+    }
+</script>
