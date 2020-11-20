@@ -294,7 +294,44 @@ header {
     /* background-color:red; */
 }
 
-.valores .ladoB .B{
+.valores .ladoB .B1{
+    width:250px;
+    height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:center;
+    border-radius:20px;
+    font-size:20px;
+    background-image:url(../img/trofeu.png);
+    background-size:230px;
+    background-repeat: no-repeat;
+    background-position:top;
+
+
+}
+
+.valores .ladoB .B2{
+    width:250px;
+    height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+}
+
+.valores .ladoB .B3{
+    width:250px;
+    height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+}
+
+.valores .ladoB .B4{
     width:250px;
     height:250px;
     display:flex;
@@ -308,21 +345,29 @@ header {
     width:150px;
 }
 
-.valores .ladoB .B .chatoB{
+.valores .ladoB p{
     padding:20px 0 20px 0;
     font-size:20px;
 }
 
-.valores .ladoB .B:hover{
-    width:250px;
-    height:250px;
-    background-color:rgb(255, 102, 0, 0.5);
+.valores .ladoB .B1:hover{
+    /* background-color:rgb(255, 102, 0, 0.3); */
     border-radius:20px;
-    transition: all 0.3s;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    transition:0.3s;
     align-items:center;
+    font-size: 0;
+    background-image:url(../img/medalha.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.valores .ladoB .B1:hover:after{
+    content: attr(data-hover);
+    /* transition:all 1s; */
+    align-items:center;
+    font-size:17px;
+    text-align:center;
 }
 
 
