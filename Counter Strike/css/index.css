@@ -43,6 +43,7 @@ header {
     width:500px;
     height:60px;
     padding-top:10px;
+    text-decoration:none;
 }
 
 .logo img{
@@ -50,10 +51,19 @@ header {
 }
 
 
-.logo h3 {
+.logo a{
     color:white;
     font-size:30px;
+    font-weight: bold;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
+.logo a:hover{
+    color:rgb(255, 167, 116);
+    transition: all 0.3s;
 }
 /* ----------------------------------------------- */
 
@@ -299,16 +309,10 @@ header {
     height:250px;
     display:flex;
     flex-direction:column;
-    justify-content:flex-end;
+    justify-content:center;
     align-items:center;
     border-radius:20px;
     font-size:20px;
-    background-image:url(../img/trofeu.png);
-    background-size:230px;
-    background-repeat: no-repeat;
-    background-position:top;
-
-
 }
 
 .valores .ladoB .B2{
@@ -319,6 +323,7 @@ header {
     justify-content:center;
     align-items:center;
     border-radius:20px;
+    font-size:20px;
 }
 
 .valores .ladoB .B3{
@@ -329,6 +334,7 @@ header {
     justify-content:center;
     align-items:center;
     border-radius:20px;
+    font-size:20px;
 }
 
 .valores .ladoB .B4{
@@ -339,6 +345,7 @@ header {
     justify-content:center;
     align-items:center;
     border-radius:20px;
+    font-size:20px;
 }
 
 .valores .ladoB img{
@@ -353,13 +360,22 @@ header {
 .valores .ladoB .B1:hover{
     /* background-color:rgb(255, 102, 0, 0.3); */
     border-radius:20px;
-    transition:0.3s;
+    transition:all 0.5s ease-in;
     align-items:center;
-    font-size: 0;
-    background-image:url(../img/medalha.png);
+    /* background-image:url(../img/medalha.png); */
     background-size: 140px;
     background-repeat: no-repeat;
     background-position:top;
+}
+
+.B1:hover #B1img{
+    opacity: 1;
+    width:100px;
+}
+
+.B1:hover #B1span{
+    font-size:17px;
+    text-align:center;
 }
 
 .valores .ladoB .B1:hover:after{
@@ -368,6 +384,80 @@ header {
     align-items:center;
     font-size:17px;
     text-align:center;
+}
+
+#B1img {
+    transition:all 0.5s ease-in;
+    transition:all 0.5s ease-out;
+}
+
+.B2:hover #B2img{
+    opacity: 1;
+    width:100px;
+}
+
+.B2:hover #B2span{
+    font-size:17px;
+    text-align:center;
+}
+
+.valores .ladoB .B2:hover:after{
+    content: attr(data-hover);
+    /* transition:all 1s; */
+    align-items:center;
+    font-size:17px;
+    text-align:center;
+}
+
+#B2img {
+    transition:all 0.5s ease-in;
+    transition:all 0.5s ease-out;
+}
+
+.B3:hover #B3img{
+    opacity: 1;
+    width:100px;
+}
+
+.B3:hover #B3span{
+    font-size:17px;
+    text-align:center;
+}
+
+.valores .ladoB .B3:hover:after{
+    content: attr(data-hover);
+    /* transition:all 1s; */
+    align-items:center;
+    font-size:17px;
+    text-align:center;
+}
+
+#B3img {
+    transition:all 0.5s ease-in;
+    transition:all 0.5s ease-out;
+}
+
+.B4:hover #B4img{
+    opacity: 1;
+    width:100px;
+}
+
+.B4:hover #B4span{
+    font-size:17px;
+    text-align:center;
+}
+
+.valores .ladoB .B4:hover:after{
+    content: attr(data-hover);
+    /* transition:all 1s; */
+    align-items:center;
+    font-size:17px;
+    text-align:center;
+}
+
+#B4img {
+    transition:all 0.5s ease-in;
+    transition:all 0.5s ease-out;
 }
 
 

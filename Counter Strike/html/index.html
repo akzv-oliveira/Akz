@@ -17,8 +17,10 @@
     <header>
 
         <div class="logo">
-            <img src="../img/Logo Oficial.png">
-            <h3>PROJETO AKZ</h3>
+            <a href="#">
+                <img src="../img/Logo Oficial.png">
+                PROJETO AKZ
+            </a>
         </div>
 
         <div class="sub-header">
@@ -79,9 +81,10 @@
                 </div>
                 <div class="sobre-text">
                     <p> Counter-Strike é um jogo de tiro em
-                        primeira pessoa multiplayer, no qual times de terroristas e
-                        contra-terroristas batalham entre si, respectivamente, realizando
-                        um ato de terror e prevenindo-os.</p>
+                        primeira pessoa no formato multiplayer baseado em rodadas nas quais
+                        equipes de contraterroristas e terroristas combatem-se até a eliminação completa de um dos
+                        times. O jogo tem como objetivos principais plantar e desarmar bombas ou sequestrar e salvar
+                        reféns</p>
                 </div>
             </div>
 
@@ -93,8 +96,9 @@
                 </div>
 
                 <div class="sobrevideo-text">
-                    <p>Acima temos um vídeo explicativo sobre a mecânica do jogo.
-                        Ative as legendas em português para um melhor entendimento</p>
+                    <p>Acima temos um vídeo mais detalhado sobre como é o formato do jogo.
+                        <i>O vídeo está em Inglês! É necessário ativar as legendas em português
+                            para um melhor entendimento</i></p>
                 </div>
             </div>
 
@@ -111,37 +115,56 @@
 
             </div>
             <div class="ladoB">
-                <div class="B1" data-hover="CSGO é um jogo 5x5 na qual diferentes jogandores utilizam de 
-                diversas habilidades para se saírem bem contra seus inimigos">
+                <div class="B1"
+                    onmouseover="B1img.src='../img/medalha.png'; B1span.style='display:block'; B1title.style='display:none'"
+                    onmouseout="B1img.src='../img/trofeu.png'; B1span.style='display:none'; B1title.style='display:block'">
 
-                    <!-- <img src="../img/trofeu.png"> -->
+                    <img id="B1img" src="../img/trofeu.png">
+                    <span id="B1title">COMPETITIVIDADE</span>
+                    <span id="B1span" style="display:none">CSGO é um jogo 5x5 na qual diferentes jogandores utilizam de
+                        diversas habilidades para se saírem bem contra seus inimigos</span>
+                </div>
 
-                    COMPETIVIDADE
+                <div class="B2"
+                    onmouseover="B2img.src='../img/workteam.png'; B2span.style='display:block'; B2title.style='display:none'"
+                    onmouseout="B2img.src='../img/equipe.png'; B2span.style='display:none'; B2title.style='display:block'">
 
+                    <img id="B2img" src="../img/equipe.png">
+                    <span id="B2title">TRABALHO EM EQUIPE</span>
+                    <span id="B2span" style="display:none">Saber jogar em coletivo e trabalhar em equipe é essencial
+                        para poder
+                        criar diversas jogadas e manter sempre o jogo ao seu favor</span>
+                </div>
+
+                <div class="B3"
+                    onmouseover="B3img.src='../img/vitoria.png'; B3title.style='display:none'; B3span.style='display:block'"
+                    onmouseout="B3img.src='../img/comunicação.png'; B3span.style='display:none'; B3title.style='display:block'">
+
+                    <img id="B3img" src="../img/comunicação.png">
+
+                    <span id="B3title">COMUNICAÇÃO</span>
+                    <span id="B3span" style="display:none">Comunicação dentro do CSGO é a chave essencial para a
+                        vitória. É
+                        necessário comunicar para saber qual tomada de decisões tomar dentro do jogo
+                    </span>
 
                 </div>
-                <div class="B2">
-                    <img src="../img/equipe.png">
-                    <div class="chatoB">
-                        <p>TRABALHO EM EQUIPE</p>
-                    </div>
-                </div>
-                <div class="B3">
-                    <img src="../img/comunicação.png">
-                    <div class="chatoB">
-                        <p>COMUNICAÇÃO</p>
-                    </div>
-                </div>
-                <div class="B4">
-                    <img src="../img/resiliencia.png">
-                    <div class="chatoB">
-                        <p>RESILIÊNCIA</p>
-                    </div>
+
+                <div class="B4"
+                    onmouseover=" B4img.src='../img/fogo.png'; B4title.style='display:none'; B4span.style='display:block'"
+                    onmouseout="B4img.src='../img/resiliencia.png'; B4span.style='display:none'; B4title.style='display:block'">
+
+                    <img id="B4img" src="../img/resiliencia.png">
+
+                    <span id="B4title">RESILIÊNCIA</span>
+                    <span id="B4span" style="display:none">Ganhar no CSGO é saber errar e fracassar diversas vezes.
+                        Quanto mais resiliente e força de vontade
+                        o jogador possuir, melhor é seu desempenho e experiência de jogo
+                    </span>
+
                 </div>
 
             </div>
-
-    </div>
 
     </div>
 
