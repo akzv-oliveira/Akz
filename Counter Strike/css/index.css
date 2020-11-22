@@ -215,7 +215,7 @@ header {
     justify-content:center;
     align-items:center;
     width:100%;
-    height:600px;
+    height:700px;
     background-color:rgb(27, 27, 27);
     /* background-image:url(../img/Fundo\ CSGO.jpg);
     background-position:top;
@@ -265,7 +265,7 @@ header {
 /* -------------------VALORES--------------------- */
 .valores {
     width:100%;
-    height:600px;
+    height:750px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -283,6 +283,7 @@ header {
 }
 
 .valoresakz{
+    position:absolute;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -290,9 +291,9 @@ header {
 }
 
 .valores .ladoA .chato{
-    width:35%;
+    width:45%;
     border-bottom: 3px solid black;
-    font-size:25px;
+    font-size:30px;
     padding:20px 0 20px 0;
     text-align:center;
 }
@@ -302,6 +303,9 @@ header {
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    padding-top:20px;
+    /* background-color: blueviolet; */
+
 }
 
 .textvalorespai{
@@ -311,7 +315,6 @@ header {
 
 .valores .ladoA img{
     width:350px;
-    padding-top:50px;
 }
 
 .valores .ladoB{
@@ -481,8 +484,16 @@ header {
     transition:all 0.5s ease-out;
 }
 
+/* ----------------------------------------------- */
 
+/* ---------------CONTEUDO FINAL------------------ */
+#conteudo-finalpai{
+    width:100%;
+    height:600px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:blue;
 
-
-
+}
 /* ----------------------------------------------- */
