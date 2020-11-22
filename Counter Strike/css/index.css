@@ -218,6 +218,7 @@ header {
     width:100%;
     height:700px;
     background-color:rgb(27, 27, 27);
+    border-bottom:5px solid rgb(32, 32, 32);
     /* background-image:url(../img/Fundo\ CSGO.jpg);
     background-position:top;
     background-size: cover; */
@@ -491,6 +492,7 @@ header {
 /* ---------------CONTEUDO FINAL------------------ */
 #conteudo-finalpai{
     width:100%;
+    height:760px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -499,10 +501,68 @@ header {
 
 .conteudo-final{
     position:relative;
+    z-index:1;
     border-radius:100px;
 }
 .conteudo-final video{
     width:100%;
+}
+
+.conteudo-final-espelhado {
+    width:100%;
+    height:760px;
+    position:absolute;
+    z-index:2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    /* background-color: aqua */
+}
+
+#conteudo-finalpai img{
+    width:300px;
+}
+
+#conteudo-finalpai b{
+    font-size:40px;
+}
+
+.ak-info{
+    width:1100px;
+    display:flex;
+    /* justify-content:center; */
+    align-items:center;
+    /* background-color: aqua; */
+}
+
+.ak-text{
+    color:white;
+    font-size:28px;
+    text-shadow: 3px 3px black;
+}
+
+#ak_img{
+    width:300px;
+}
+
+.awp-info{
+    width:1100px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    /* background-color: aqua; */
+}
+
+.awp-text{
+    color:white;
+    font-size:28px;
+    text-shadow: 3px 3px black;
+    text-align:end;
+}
+
+#awp_img{
+    width:300px;
 }
 /* ----------------------------------------------- */
 
