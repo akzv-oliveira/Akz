@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Tela de Cadastro</title>
     <link rel="stylesheet" href="../css/cadastro.css">
     <link href="../img/Logo Oficial.png" rel="shortcut icon">
     <style>
@@ -17,15 +17,19 @@
     <div class="all">
         <header>
 
-            <div class="logo">
-                <div class="logo-img">
-                    <img src="../img/Logo Oficial.png">
-                </div>
+            <a href="index.html"
+            onmouseover="logo_text.style='font-size:27px; transition:all 0.3s ease-in-out; color:rgb(253, 153, 94)'; logo_img.style='width:65px; transition:all 0.3s ease-in-out; color:rgb(253, 153, 94)'"
+            onmouseout="logo_text.style='font-size:25px; transition:all 0.3s ease-in-out'; logo_img.style='width:60px; transition:all 0.3s ease-in-out'">
+                <div class="logo">
+                    <div class="logo-img">
+                        <img id="logo_img" src="../img/Logo Oficial.png">
+                    </div>
 
-                <div class="logo-text">
-                    AKZ
+                    <div id="logo_text" class="logo-text">
+                        AKZ
+                    </div>
                 </div>
-            </div>
+            </a>
 
         </header>
 
