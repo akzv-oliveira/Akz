@@ -204,6 +204,7 @@ header {
     font-size: 60px;
     text-align:center;
     padding-bottom:40px;
+    text-shadow: 3px 3px black;
 }
 /* ----------------------------------------------- */
 
@@ -270,6 +271,7 @@ header {
     justify-content:center;
     align-items:center;
     background-color: white; 
+    border-bottom:5px solid rgb(32, 32, 32);
 }
 
 .valores .ladoA{
@@ -489,11 +491,47 @@ header {
 /* ---------------CONTEUDO FINAL------------------ */
 #conteudo-finalpai{
     width:100%;
-    height:600px;
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:blue;
+    background-color:rgb(32, 32, 32);
+}
 
+.conteudo-final{
+    position:relative;
+    border-radius:100px;
+}
+.conteudo-final video{
+    width:100%;
+}
+/* ----------------------------------------------- */
+
+/* -----------------FOOTER------------------------ */
+footer {
+    width:100%;
+    height:120px;
+    background-color:rgb(10, 10, 10);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+}
+
+footer span{
+    margin-top:25px;
+}
+
+.redes-sociais {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer img{
+    width:35px;
+    padding: 10px 20px 20px 0;
 }
 /* ----------------------------------------------- */
