@@ -16,10 +16,12 @@
 
     <header>
 
-        <div class="logo">
-            <a href="#">
-                <img src="../img/Logo Oficial.png">
-                PROJETO AKZ
+        <div id="logo" class="logo"
+        onmouseover="logoimg.style='width:90px; transition:all 0.2s linear'; logotext.style='font-size:33px; transition:all 0.2s linear'"
+        onmouseout="logoimg.style='width:80px; transition:all 0.2s linear'; logotext.style='font-size:30px; transition:all 0.2s linear'">
+            <a id="logotext" href="#">
+                <img id="logoimg" src="../img/Logo Oficial.png">
+                <div >PROJETO AKZ</div>
             </a>
         </div>
 
@@ -31,10 +33,6 @@
 
             <a href="#valores">
                 Valores
-            </a>
-
-            <a href="#">
-                Akz
             </a>
 
             <a href="#">
@@ -57,7 +55,7 @@
         <section class="welcome" id="welcome">
 
             <div class="video-desfocado">
-                <video src="../video/Video CSGO Desfocado.mp4" autoplay loop>
+                <video src="../video/Fragmovie do Fallen extended.mp4" autoplay loop>
 
                 </video>
             </div>
@@ -107,10 +105,24 @@
         <section class="valores" id="valores">
             <div class="ladoA">
                 <div class="valoresakz">
-                    <div class="chato">
-                        <p>VALORES AGREGADOS PELO JOGO</p>
+                    <div id="chato" class="chato">
+                        <p>VALORES</p>
                     </div>
-                    <img src="../img/Logo Oficial.png">
+                    <div class="valores-img"
+                        onmouseover="logovalores.style='width:100px; transition: all 0.5s ease-out'; textvalores.style='display:block; transition: all 1s ease-in-out'; chato.style='display:none' "
+                        onmouseout="logovalores.style='display:block; transition: all 0.5s ease-out'; textvalores.style='display:none'; chato.style='display:block' ">
+                        <img id="logovalores" src="../img/Logo Oficial.png">
+                        <div class="textvalorespai">
+                            <span id="textvalores" style="display:none">
+                                Olá! meu nome é <b style="color:rgb(202, 58, 58)">Vinícius</b> 👋🏽<br><br> O <b style="color:rgb(255, 124, 9)">Projeto AKZ</b> é um projeto pessoal de vida baseado nos meus valores com o mundo ao redor. <br><br>
+                                Ele consiste no meu <b style="color:darkgreen">desenvolvimento pessoal</b>, <b style="color:darkgreen">profissional</b> e <b style="color:darkgreen">emocional</b> por meio de um conjunto de experiências, e que tem como finalidade conhecer 
+                                aquilo que é novo/desconhecido e moldar meu cárater como indivíduo. <br><br>
+                                Esse projeto envolve diversos gostos e temas diferentes que tem como proposta aperfeiçoar aquilo que conheço e desenvolver
+                                aptidão por atividades que ainda desconheço. <b style="color:rgb(4, 4, 151)">Counter Strike: Global Offensive</b> é um dos temas fundamentais por moldar os valores que agrego hoje
+                            </span>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -145,7 +157,7 @@
                     <span id="B3title">COMUNICAÇÃO</span>
                     <span id="B3span" style="display:none">Comunicação dentro do CSGO é a chave essencial para a
                         vitória. É
-                        necessário comunicar para saber qual tomada de decisões tomar dentro do jogo
+                        necessário comunicar para saber quais decisões tomar dentro do jogo
                     </span>
 
                 </div>

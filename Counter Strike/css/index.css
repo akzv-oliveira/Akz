@@ -282,10 +282,31 @@ header {
     
 }
 
+.valoresakz{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
 .valores .ladoA .chato{
+    width:35%;
     border-bottom: 3px solid black;
     font-size:25px;
     padding:20px 0 20px 0;
+    text-align:center;
+}
+
+.valores-img{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.textvalorespai{
+    width:62%;
+    padding-top:20px;
 }
 
 .valores .ladoA img{
