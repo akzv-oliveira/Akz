@@ -1,7 +1,7 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: Righteous;
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Righteous;
 }
 
 body {
@@ -24,7 +24,7 @@ header {
     background-color:rgb(32, 32, 32);
     display:flex;
     align-items:center;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid skyblue;
 }
 
 header a{
@@ -50,10 +50,6 @@ header a{
     text-decoration: none;
     padding-left:5px;
 }
-
-
-
-
 /* ----------------------------------------------- */
 
 /* -------------------CONTEUDO-------------------- */
@@ -61,7 +57,7 @@ header a{
     width:100%;
     height:75vh;
     /* background-color:red; */
-    background-image:url(../img/cadastro/Tela\ de\ Fundo\ 04.jpg);
+    background-image:url(../img/login/Tela\ de\ Fundo.png);
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -76,9 +72,18 @@ header a{
     /* background-color:red; */
 }
 
-.cadastro-pai{
-    width:30%;
-    height:450px;
+.login-pai {
+    width:50%;
+    height:75vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* background-color: green; */
+}
+
+.formulario{
+    width:60%;
+    height:480px;
     background-color:rgb(32, 32, 32, 0.9);
     display:flex;
     justify-content:space-evenly;
@@ -87,9 +92,10 @@ header a{
     border-radius:15px;
 }
 
-.cadastro-titulo{
+.login-titulo{
     width:80%;
     height:100px;
+    padding-top:40px;
     opacity:1;
     display:flex;
     justify-content:center;
@@ -98,69 +104,116 @@ header a{
 }
 
 .titulo-img img{
-    width:90px;
+    width:100px;
 }
 
 .titulo-text{
     color:white;
-    font-size:25px;
+    font-size:30px;
 }
 
-.cadastro-pai input{
+#form_login{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-direction:column;
+    /* background-color:red; */
+    margin-top:15px;
+    width:100%;
+    height:350px;
+}
+
+#form_login .input-padrao{
     width:300px;
     height:20px;
 }
 
-.cadastro-pai span{
+#form_login label{
     color:white;
-    font-size:13px;
+    font-size:16px;
 }
 
-.button button{
+.input-login{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.input-senha{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.btn{
     width:120px;
-    height:30px;
+    height:40px;
     cursor: pointer;
     opacity:1;
     background-color: rgb(22, 22, 22);
-    border:2px solid white;
+    border:2px solid skyblue;
     border-radius:5px;
     color:white;
     font-size:18px;
     transition: all 0.3s ease-in-out;
 }
 
-.button button:hover{
-    color:rgb(156, 156, 156);
+.btn:hover{
+    color:dodgerblue;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
+.extra {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:5px;
+    /* background-color:red; */
+}
 
-.login{
+.msg_erro{
+    margin-top:5px;
+    color:rgb(209, 78, 78);
+    font-size:20px;
+}
+
+#img_aguarde{
+    width:30px;  
+}
+
+.cadastro{
     width:90%;
     /* background-color:black; */
     display:flex;
     justify-content:center;
 }
 
-.login span{
-    font-size:13px;
+.cadastro span{
+    font-size:14px;
     transition: all 0.3s ease-in-out;
 }
 
-.login span:hover{
-    color:rgb(156, 156, 156);
+.cadastro span:hover{
+    color:dodgerblue;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.login a{
+.cadastro a{
+    margin-bottom:25px;
+    color:white;
     text-decoration: none;
     text-align:center;
 }
 
-
-
+.void {
+    width:50%;
+    height:75vh;
+    /* background-color: rgb(4, 10, 4); */
+}
 /* ----------------------------------------------- */
 
 /* --------------------FOOTER--------------------- */
@@ -174,7 +227,7 @@ footer {
     align-items:center;
     justify-content:center;
     font-size:15px;
-    border-top:2px solid rgb(255, 255, 255);
+    border-top: 2px solid skyblue;
     /* position:absolute;
     bottom:0; */
     

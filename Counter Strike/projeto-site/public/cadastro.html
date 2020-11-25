@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link href="img/Logo Oficial Gray.png" rel="shortcut icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <div class="all">
+        <header>
+
+            <a href="index.html"
+                onmouseover="logo_text.style='font-size:27px; transition:all 0.3s ease-in-out; color:rgb(201, 200, 200)'; logo_img.style='width:65px; transition:all 0.3s ease-in-out; color:rgb(201, 200, 200)'"
+                onmouseout="logo_text.style='font-size:25px; transition:all 0.3s ease-in-out'; logo_img.style='width:60px; transition:all 0.3s ease-in-out'">
+                <div class="logo">
+                    <div class="logo-img">
+                        <img id="logo_img" src="img/Logo Oficial Gray.png">
+                    </div>
+
+                    <div id="logo_text" class="logo-text">
+                        AKZ
+                    </div>
+                </div>
+            </a>
+
+        </header>
+
+        <section id="conteudo-pai">
+            <div class="conteudo">
+
+
+                <div class="formulario">
+                    <div class="cadastro-titulo">
+                        <div class="titulo-img">
+                            <img src="img/Logo Oficial Gray.png">
+                        </div>
+                        <div class="titulo-text">
+                            CADASTRO
+                        </div>
+                    </div>
+
+                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                        <div class="input-nome">
+                            <label for="nome">NOME COMPLETO:</label>
+                            <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                                placeholder="Seu nome" required minlength="4">
+                        </div>
+
+                        <div class="input-login">
+                            <label for="login">NOME DE USUÁRIO:</label>
+                            <input type="text" name="login" class="input-padrao" placeholder="Seu login" required
+                                minlength="4">
+                        </div>
+
+                        <div class="input-email">
+                            <label for="email">E-MAIL:</label>
+                            <input type="email" name="email" class="input-padrao" placeholder="Seu e-mail" required
+                                minlength="4">
+                        </div>
+
+                        <div class="input-senha">
+                            <label for="senha">SENHA:</label>
+                            <input type="password" name="senha" class="input-padrao" placeholder="**********" required
+                                minlength="4">
+                        </div>
+
+                        <input type="submit" id="btn_entrar" value="CADASTRAR" class="btn">
+                    </form>
+
+                    <div class="loading">
+                        <img src="img/loader branco.gif" id="img_aguarde" style="opacity: 0;" width="100px">
+                    </div>
+
+                    <!-- <div id="div_erro" style="color: rgb(255, 0, 0); opacity: 0">
+                        ERRO NO CADASTRO
+                    </div> -->
+
+                    <div class="login">
+                        <a href="login.html">
+                            <span>
+                                Já possui um Login? <br>
+                                Acesse já sua conta!
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div clas="footer-text">
+                <span>Desenvolvido por akzv-oliveira © 2020</span>
+            </div>
+
+            <div class="redes-sociais">
+
+                <a target=”_blank” href="https://www.instagram.com/akzvini/"
+                    onmouseover="instagram.style='width:25px; transition:all 0.3s ease-in-out'"
+                    onmouseout="instagram.style='width:20px; transition:all 0.3s ease-in-out'">
+                    <img id="instagram" src="img/Instagram.png"></a>
+
+                <a target=”_blank” href="https://github.com/akzv-oliveira"
+                    onmouseover="github.style='width:25px; transition:all 0.3s ease-in-out'"
+                    onmouseout="github.style='width:20px; transition:all 0.3s ease-in-out'">
+                    <img id="github" src="img/Github.png"></a>
+
+                <a target=”_blank” href="https://www.linkedin.com/in/akz-oliveira/"
+                    onmouseover="linkedin.style='width:25px; transition:all 0.3s ease-in-out'"
+                    onmouseout="linkedin.style='width:20px; transition:all 0.3s ease-in-out'">
+                    <img id="linkedin" src="img/Linkedin.png"></a>
+            </div>
+
+
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.opacity = 1;
+        // div_erro.style.opacity = 0;
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.opacity = 0;
+        // div_erro.style.opacity = 1;
+    }
+
+</script>
