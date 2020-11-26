@@ -41,14 +41,29 @@ header {
     align-items: center;
 }
 
-.logo-img img{
+.akz-space img{
     width:90px;
 }
 
-.logo-title{
+.akz-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:white;
     font-size:25px;
     text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+    /* background-color: green; */
+}
+.akz-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+.akz-space label{
+    cursor: pointer;
 }
 
 .menu {
@@ -70,8 +85,7 @@ header {
     align-items: center;
     text-decoration: none;
     /* cursor: pointer; */
-    /* background-color:green; */
-    
+    /* background-color:green; */   
 }
 
 .historia label{
@@ -82,15 +96,29 @@ header {
     text-decoration: none;
 }
 
-.historia-img img{
+.historia-space img{
     width:40px;
 }
 
-.historia-title{
+.historia-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:white;
     font-size:13px;
     text-align:center;
     cursor: pointer;
+    transition:all 0.3s ease-in-out;
+    /* background-color: green; */
+}
+.historia-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#historia_img {
+    padding-bottom:5px;
 }
 
 .equipes {
@@ -110,14 +138,28 @@ header {
     text-decoration: none;
 }
 
-.equipes-img img{
+.equipes-space img{
     width:40px;
 }
 
-.equipes-title{
+.equipes-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:white;
     font-size:13px;
     text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+.equipes-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#equipes_img {
+    padding-bottom:5px;
 }
 
 .objetivo{
@@ -137,14 +179,28 @@ header {
     text-decoration: none;
 }
 
-.objetivo-img img{
+.objetivo-space img{
     width:40px;
 }
 
-.objetivo-title{
+.objetivo-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:white;
     font-size:13px;
     text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+.objetivo-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#objetivo_img {
+    padding-bottom:5px;
 }
 
 .mapas{
@@ -164,14 +220,28 @@ header {
     text-decoration: none;
 }
 
-.mapas-img img{
+.mapas-space img{
     width:40px;
 }
 
-.mapas-title{
+.mapas-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:white;
     font-size:13px;
     text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+.mapas-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#mapas_img {
+    padding-bottom:5px;
 }
 
 .armas{
@@ -191,14 +261,29 @@ header {
     text-decoration: none;
 }
 
-.armas-img img{
+.armas-space img{
     width:40px;
 }
 
-.armas-title{
+.armas-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:white;
     font-size:13px;
     text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+.armas-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#armas_img {
+    padding-bottom:5px;
 }
 
 .utilitarios{
@@ -218,14 +303,29 @@ header {
     text-decoration: none;
 }
 
-.utilitarios-img img{
+.utilitarios-space img{
     width:40px;
 }
 
-.utilitarios-title{
+.utilitarios-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:white;
     font-size:13px;
     text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+.utilitarios-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#utilitarios_img {
+    padding-bottom:5px;
 }
 
 /* ----------------------------------------------- */
@@ -257,7 +357,7 @@ header {
     display:flex;
     flex-direction: column;
     align-items:center;
-    background-color:rgb(185, 183, 183);
+    background-color:rgba(255, 94, 0, 0.589);
     margin-top: 10px;
     margin-bottom:10px;
     width:8vw;
@@ -281,7 +381,7 @@ header {
     display:flex;
     flex-direction: column;
     align-items:center;
-    background-color:rgb(185, 183, 183);
+    background-color:rgba(255, 94, 0, 0.589);
     margin-top: 10px;
     margin-bottom:10px;
     width:8vw;
@@ -305,7 +405,7 @@ header {
     display:flex;
     flex-direction: column;
     align-items:center;
-    background-color:rgb(185, 183, 183);
+    background-color:rgba(255, 94, 0, 0.589);
     margin-top: 10px;
     margin-bottom:10px;
     width:8vw;
@@ -329,7 +429,7 @@ header {
     display:flex;
     flex-direction: column;
     align-items:center;
-    background-color:rgb(185, 183, 183);
+    background-color:rgba(255, 94, 0, 0.589);
     margin-top: 10px;
     margin-bottom:10px;
     width:8vw;
@@ -353,7 +453,7 @@ header {
     display:flex;
     flex-direction: column;
     align-items:center;
-    background-color:rgb(185, 183, 183);
+    background-color:rgba(255, 94, 0, 0.589);
     margin-top: 10px;
     margin-bottom:10px;
     width:8vw;
@@ -377,7 +477,7 @@ header {
     display:flex;
     flex-direction: column;
     align-items:center;
-    background-color:rgb(185, 183, 183);
+    background-color:rgba(255, 94, 0, 0.589);
     margin-top: 10px;
     margin-bottom:10px;
     width:8vw;
