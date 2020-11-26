@@ -83,7 +83,7 @@ header a{
 
 .formulario{
     width:60%;
-    height:480px;
+    height:460px;
     background-color:rgb(32, 32, 32, 0.9);
     display:flex;
     justify-content:space-evenly;
@@ -148,6 +148,7 @@ header a{
 .btn{
     width:120px;
     height:40px;
+    margin-top:10px;
     cursor: pointer;
     opacity:1;
     background-color: rgb(22, 22, 22);
