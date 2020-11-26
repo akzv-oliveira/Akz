@@ -28,19 +28,21 @@
             <div class="menu">
 
                 <div class="historia"
-                onmouseover="historia_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';historia_img.style='width:45px; transition:all 0.3s ease-in-out'"
-                onmouseout="historia_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';historia_img.style='width:40px; transition:all 0.3s ease-in-out'">
+                    onmouseover="historia_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';historia_img.style='width:45px; transition:all 0.3s ease-in-out'"
+                    onmouseout="historia_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';historia_img.style='width:40px; transition:all 0.3s ease-in-out'"
+                    onclick="mostrar_historia()" on id="historia">
                     <a href="#" class="historia-img">
-                        <img  id="historia_img" src="../img/akz/dog tag.png">
+                        <img id="historia_img" src="../img/akz/dog tag.png">
                     </a>
                     <a href="#" id="historia_title" class="historia-title">
                         <label>HISTÓRIA<br> DO CS:GO</label>
                     </a>
                 </div>
 
-                <div href="#" class="equipes"
-                onmouseover="equipes_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';equipes_img.style='width:45px; transition:all 0.3s ease-in-out'"
-                onmouseout="equipes_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';equipes_img.style='width:40px; transition:all 0.3s ease-in-out'">
+                <div class="equipes"
+                    onmouseover="equipes_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';equipes_img.style='width:45px; transition:all 0.3s ease-in-out'"
+                    onmouseout="equipes_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';equipes_img.style='width:40px; transition:all 0.3s ease-in-out'"
+                    onclick="mostrar_equipes()" id="equipes">
                     <a href="#" class="equipes-img">
                         <img id="equipes_img" src="../img/akz/terrorista.png">
                     </a>
@@ -50,8 +52,9 @@
                 </div>
 
                 <div href="#" class="objetivo"
-                onmouseover="objetivo_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';objetivo_img.style='width:45px; transition:all 0.3s ease-in-out'"
-                onmouseout="objetivo_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';objetivo_img.style='width:40px; transition:all 0.3s ease-in-out'">
+                    onmouseover="objetivo_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';objetivo_img.style='width:45px; transition:all 0.3s ease-in-out'"
+                    onmouseout="objetivo_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';objetivo_img.style='width:40px; transition:all 0.3s ease-in-out'"
+                    onclick="mostrar_objetivo()" id="objetivo">
                     <a href="#" class="objetivo-img">
                         <img id="objetivo_img" src="../img/akz/C4 Alternative.png">
                     </a>
@@ -61,8 +64,9 @@
                 </div>
 
                 <div href="#" class="mapas"
-                onmouseover="mapas_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';mapas_img.style='width:45px; transition:all 0.3s ease-in-out'"
-                onmouseout="mapas_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';mapas_img.style='width:40px; transition:all 0.3s ease-in-out'">
+                    onmouseover="mapas_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';mapas_img.style='width:45px; transition:all 0.3s ease-in-out'"
+                    onmouseout="mapas_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';mapas_img.style='width:40px; transition:all 0.3s ease-in-out'"
+                    onclick="mostrar_mapas()" id="mapas">
                     <a href="#" class="mapas-img">
                         <img id="mapas_img" src="../img/akz/mapa 5.png">
                     </a>
@@ -72,8 +76,9 @@
                 </div>
 
                 <div href="#" class="armas"
-                onmouseover="armas_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';armas_img.style='width:45px; transition:all 0.3s ease-in-out'"
-                onmouseout="armas_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';armas_img.style='width:40px; transition:all 0.3s ease-in-out'">
+                    onmouseover="armas_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';armas_img.style='width:45px; transition:all 0.3s ease-in-out'"
+                    onmouseout="armas_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';armas_img.style='width:40px; transition:all 0.3s ease-in-out'"
+                    onclick="mostrar_armas()" id="armas">
                     <a href="#" class="armas-img">
                         <img id="armas_img" src="../img/akz/desert eagle.png">
                     </a>
@@ -83,8 +88,9 @@
                 </div>
 
                 <div href="#" class="utilitarios"
-                onmouseover="utilitarios_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';utilitarios_img.style='width:45px; transition:all 0.3s ease-in-out'"
-                onmouseout="utilitarios_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';utilitarios_img.style='width:40px; transition:all 0.3s ease-in-out'">
+                    onmouseover="utilitarios_title.style='color:rgb(252, 135, 68); transition:all 0.3s ease-in-out; font-size:15px;';utilitarios_img.style='width:45px; transition:all 0.3s ease-in-out'"
+                    onmouseout="utilitarios_title.style='color:white; transition:all 0.3s ease-in-out; font-size:13px';utilitarios_img.style='width:40px; transition:all 0.3s ease-in-out'"
+                    onclick="mostrar_utilitarios()" id="utilitarios">
                     <a href="#" class="utilitarios-img">
                         <img id="utilitarios_img" src="../img/akz/utilitario.png">
                     </a>
@@ -107,6 +113,121 @@
         </div>
     </header>
 
+    <div class="conteudo">
+        <div class="sub-header" id="sub_header_historia">
+            <div class="submenu-lateral">
+                <div class="items">
+                    a
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-header" id="sub_header_equipes">
+            <div class="submenu-lateral">
+                <div class="items">
+                    b
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-header" id="sub_header_objetivo">
+            <div class="submenu-lateral">
+                <div class="items">
+                    c
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-header" id="sub_header_mapas">
+            <div class="submenu-lateral">
+                <div class="items">
+                    d
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-header" id="sub_header_armas">
+            <div class="submenu-lateral">
+                <div class="items">
+                    e
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sub-header" id="sub_header_utilitarios">
+            <div class="submenu-lateral">
+                <div class="items">
+                    f
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
+
+<script>
+
+    function mostrar_historia() {
+        sub_header_historia.style.opacity = 1;
+        sub_header_equipes.style.opacity = 0;
+        sub_header_objetivo.style.opacity = 0;
+        sub_header_mapas.style.opacity = 0;
+        sub_header_armas.style.opacity = 0;
+        sub_header_utilitarios.style.opacity = 0;
+    }
+
+    function mostrar_equipes() {
+        sub_header_historia.style.opacity = 0;
+        sub_header_equipes.style.opacity = 1;
+        sub_header_objetivo.style.opacity = 0;
+        sub_header_mapas.style.opacity = 0;
+        sub_header_armas.style.opacity = 0;
+        sub_header_utilitarios.style.opacity = 0;
+    }
+
+    function mostrar_objetivo() {
+        sub_header_historia.style.opacity = 0;
+        sub_header_equipes.style.opacity = 0;
+        sub_header_objetivo.style.opacity = 1;
+        sub_header_mapas.style.opacity = 0;
+        sub_header_armas.style.opacity = 0;
+        sub_header_utilitarios.style.opacity = 0;
+    }
+
+    function mostrar_mapas() {
+        sub_header_historia.style.opacity = 0;
+        sub_header_equipes.style.opacity = 0;
+        sub_header_objetivo.style.opacity = 0;
+        sub_header_mapas.style.opacity = 1;
+        sub_header_armas.style.opacity = 0;
+        sub_header_utilitarios.style.opacity = 0;
+    }
+
+    function mostrar_armas() {
+        sub_header_historia.style.opacity = 0;
+        sub_header_equipes.style.opacity = 0;
+        sub_header_objetivo.style.opacity = 0;
+        sub_header_mapas.style.opacity = 0;
+        sub_header_armas.style.opacity = 1;
+        sub_header_utilitarios.style.opacity = 0;
+    }
+
+    function mostrar_utilitarios() {
+        sub_header_historia.style.opacity = 0;
+        sub_header_equipes.style.opacity = 0;
+        sub_header_objetivo.style.opacity = 0;
+        sub_header_mapas.style.opacity = 0;
+        sub_header_armas.style.opacity = 0;
+        sub_header_utilitarios.style.opacity = 1;
+    }
+
+</script>
