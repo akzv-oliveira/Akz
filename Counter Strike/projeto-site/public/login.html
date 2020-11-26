@@ -63,12 +63,12 @@
 
                         <div class="extra">
 
-                            <div class="loading">
-                                <img src="img/loader azul.gif" id="img_aguarde" style="visibility:hidden">
+                            <div id="div_erro" class="msg_erro" style="display:none">
+                               Erro
                             </div>
 
-                            <div id="div_erro" class="msg_erro" style="visibility:hidden">
-                                Erro
+                            <div class="loading">
+                                <img src="img/loader azul.gif" id="img_aguarde" style="visibility: hidden;">
                             </div>
 
                         </div>
@@ -159,13 +159,14 @@
     function aguardar() {
         btn_entrar.disabled = true;
         img_aguarde.style.visibility = 'visible';
-        div_erro.style.visibility = 'hidden';
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
     }
 
     function finalizar_aguardar(resposta) {
         btn_entrar.disabled = false;
-        img_aguarde.style.visibility = 'hidden';
-        div_erro.style.visibility = 'visible';
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
         div_erro.innerHTML = resposta;
     }
 
