@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Righteous;
+}
+
+body {
+    width:100%;
+    height:100%;
+    display:flex;
+}
+
+/* ---------------HEADER LATERAL------------------ */
+
+header {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:rgb(32, 32, 32);
+    width:10vw;
+    height:100vh;
+}
+
+.menu-lateral {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:rgb(26, 25, 25);
+    margin: 15px 15px;
+    width:8vw;
+    height:100%;
+}
+
+.logo {
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img img{
+    width:80px;
+}
+
+.logo-title{
+    color:white;
+    font-size:20px;
+    text-align:center;
+}
+
+.menu {
+    margin-top:15px;
+    height:78%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color:green; */
+}
+
+.historia {
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* cursor: pointer; */
+    /* background-color:green; */
+    
+}
+
+.historia label{
+    cursor: pointer;
+}
+
+.historia a{
+    text-decoration: none;
+}
+
+/* .historia:hover {
+    color:orangered;
+    transition: all 0.3s ease-in-out;
+} */
+
+.historia-img img{
+    width:40px;
+}
+
+.historia-title{
+    color:white;
+    font-size:13px;
+    text-align:center;
+    cursor: pointer;
+}
+
+.equipes {
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.equipes label{
+    cursor: pointer;
+}
+
+.equipes a{
+    text-decoration: none;
+}
+
+.equipes-img img{
+    width:40px;
+}
+
+.equipes-title{
+    color:white;
+    font-size:13px;
+    text-align:center;
+}
+
+.objetivo{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.objetivo label{
+    cursor: pointer;
+}
+
+.objetivo a{
+    text-decoration: none;
+}
+
+.objetivo-img img{
+    width:40px;
+}
+
+.objetivo-title{
+    color:white;
+    font-size:13px;
+    text-align:center;
+}
+
+.mapas{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mapas label{
+    cursor: pointer;
+}
+
+.mapas a{
+    text-decoration: none;
+}
+
+.mapas-img img{
+    width:40px;
+}
+
+.mapas-title{
+    color:white;
+    font-size:13px;
+    text-align:center;
+}
+
+.armas{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.armas label{
+    cursor: pointer;
+}
+
+.armas a{
+    text-decoration: none;
+}
+
+.armas-img img{
+    width:40px;
+}
+
+.armas-title{
+    color:white;
+    font-size:13px;
+    text-align:center;
+}
+
+.utilitarios{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.utilitarios label{
+    cursor: pointer;
+}
+
+.utilitarios a{
+    text-decoration: none;
+}
+
+.utilitarios-img img{
+    width:40px;
+}
+
+.utilitarios-title{
+    color:white;
+    font-size:13px;
+    text-align:center;
+}
+
+.akz{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.akz label{
+    cursor: pointer;
+}
+
+.akz a{
+    text-decoration: none;
+}
+
+.akz-img img{
+    width:40px;
+}
+
+.akz-title{
+    color:white;
+    font-size:13px;
+    text-align:center;
+}
+/* ----------------------------------------------- */
