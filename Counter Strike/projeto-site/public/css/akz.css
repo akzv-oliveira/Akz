@@ -342,7 +342,7 @@ header {
 
 /* -----------------SUB HEADER-------------------- */
 #sub_header_historia{
-    /* position:absoute; */
+    position:absoute;
     display:flex;
     flex-direction: column;
     align-items:center;
@@ -371,7 +371,7 @@ header {
     flex-direction: column;
     align-items:center;
     /* background-color:rgb(252, 160, 106); */
-    width:10vw;
+    width:9vw;
     height:100vh;
     opacity:0;
     transition: all 0.3s;
@@ -395,7 +395,7 @@ header {
     flex-direction: column;
     align-items:center;
     /* background-color:rgb(252, 160, 106); */
-    width:10vw;
+    width:9vw;
     height:100vh;
     opacity:0;
     transition: all 0.3s;
@@ -419,7 +419,7 @@ header {
     flex-direction: column;
     align-items:center;
     /* background-color:rgb(252, 160, 106); */
-    width:10vw;
+    width:9vw;
     height:100vh;
     opacity:0;
     transition: all 0.3s;
@@ -443,7 +443,7 @@ header {
     flex-direction: column;
     align-items:center;
     /* background-color:rgb(252, 160, 106); */
-    width:10vw;
+    width:9vw;
     height:100vh;
     opacity:0;
     transition: all 0.3s;
@@ -467,7 +467,7 @@ header {
     flex-direction: column;
     align-items:center;
     /* background-color:rgb(252, 160, 106); */
-    width:10vw;
+    width: 9vw;
     height:100vh;
     opacity:0;
     transition: all 0.3s;
@@ -483,5 +483,75 @@ header {
     width:8vw;
     height:97vh;
     border-radius:20px 20px 20px 20px;
+}
+/* ----------------------------------------------- */
+
+/* ---------------TELA PRINCIPAL------------------ */
+.tela-principal{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    
+}
+
+#tela-akz {
+    position:absolute;
+    z-index:2;
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* justify-content:center; */
+    /* align-items:center; */
+    width:80%;
+    height:96vh;
+    /* background-color:red; */
+    opacity:1;
+    transition: all 0.3s;
+    overflow:auto;
+    
+}
+
+#tela-akz .A1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:300px;
+    background-color: rgb(221, 218, 218);
+    border-radius:20px;
+    margin-bottom: 20px;
+}
+
+#tela-akz .A2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:300px;
+    background-color: rgb(219, 218, 218);
+    border-radius:20px;
+    margin-bottom: 20px;
+}
+
+
+
+#tela-historia {
+    position:absolute;
+    width:80%;
+    height:96vh;
+    background-color:red;
+    opacity:0;
+    transition: all 0.3s;
+}
+
+#tela-equipes {
+    position:absolute;
+    width:80%;
+    height:96vh;
+    background-color:red;
+    opacity:0;
+    transition: all 0.3s;
 }
 /* ----------------------------------------------- */
