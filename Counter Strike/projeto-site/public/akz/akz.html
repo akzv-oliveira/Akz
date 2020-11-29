@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS:GO - Projeto AKZ</title>
     <link href="../css/akz.css" rel="stylesheet">
-    <link href="../img/Logo Oficial.png" rel="shortcut icon">
+    <link href="../img/Logo Oficial - Icone Aba.png" rel="shortcut icon">
+    <script type="text/javascript" src="../funcoes.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     </style>
 </head>
 
-<body>
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+    
+</script>
+
+<body onload="verificar_autenticacao()">
 
     <header>
         <div class="menu-lateral">
             <div class="logo" onclick="mostrar_akz()" id="akz">
                 <div class="akz-space">
                     <img src="../img/Logo Oficial.png">
-                    <label id="akz_title" >AKZ</label>
+                    <label id="akz_title">AKZ</label>
                 </div>
             </div>
 
@@ -28,7 +38,7 @@
                 <div class="historia" onclick="mostrar_historia()" id="historia">
                     <a href="#" class="historia-space">
                         <img id="historia_img" src="../img/akz/dog tag.png">
-                        <label id="historia_title" >HISTÓRIA<br> DO CS:GO</label>
+                        <label id="historia_title">HISTÓRIA<br> DO CS:GO</label>
                     </a>
                 </div>
 
@@ -82,201 +92,87 @@
     </header>
 
     <div class="conteudo">
-
-        <div class="sub-header" id="sub_header_historia">
-            <div class="submenu-lateral">
-                <div class="items">
-                    a
-                </div>
-
-            </div>
-        </div>
-
-        <div class="sub-header" id="sub_header_equipes">
-            <div class="submenu-lateral">
-                <div class="items">
-                    b
-                </div>
-
-            </div>
-        </div>
-
-        <div class="sub-header" id="sub_header_objetivo">
-            <div class="submenu-lateral">
-                <div class="items">
-                    c
-                </div>
-
-            </div>
-        </div>
-
-        <div class="sub-header" id="sub_header_mapas">
-            <div class="submenu-lateral">
-                <div class="items">
-                    d
-                </div>
-
-            </div>
-        </div>
-
-        <div class="sub-header" id="sub_header_armas">
-            <div class="submenu-lateral">
-                <div class="items">
-                    e
-                </div>
-
-            </div>
-        </div>
-
-        <div class="sub-header" id="sub_header_utilitarios">
-            <div class="submenu-lateral">
-                <div class="items">
-                    f
-                </div>
-
-            </div>
-        </div>
-
         <div class="tela-principal">
-            <div class="tela" id="tela-akz">
-                <div class="A1">
-                    a
-                </div>
-
-                <div class="A2">
-                    a
-                </div>
-
-                <div class="A1">
-                    a
-                </div>
-
-                <div class="A2">
-                    a
+            <div class="cabecalho">
+                <div class="bem-vindo">
+                    <div class="bemvindo-logo">
+                        <img src="../img/Logo Icone.png">
+                    </div>
+                    <div class="bemvindo-text">
+                        <label>Bem Vindo <br><span style="color:rgb(255, 216, 116)" id="b_usuario"></span></label>
+                    </div>
                 </div>
             </div>
 
-            <div class="tela" id="tela-historia">
-                
+            <div class="tela-akz">
+                <div class="ladoA"
+                onmouseover="ladoA_title.style='opacity:0; transition: all 0.3s ease-in-out'; ladoA_txt.style='opacity:1;  transition: all 0.3s ease-in-out'; ladoA_img.style ='width:305px; transition: all 0.3s ease-in-out' "
+                onmouseout="ladoA_title.style='opacity:1;  transition: all 0.3s ease-in-out'; ladoA_txt.style='opacity:0;  transition: all 0.3s ease-in-out'; ladoA_img.style ='width:300px; transition: all 0.3s ease-in-out'">
+                    <div class="ladoA-img">
+                        <img id="ladoA_img" src="../img/akz/akz.png">
+                    </div>
+                    <div class="ladoA-text">
+                        <label id="ladoA_txt" style="opacity:0">O <span style="color:orangered">Projeto AKZ</span> é um projeto pessoal de vida baseado em <span style="color:goldenrod">valores</span> e que consiste
+                            no meu <span style="color:green">desenvolvimento pessoal</span>, <span style="color:green">profissional</span> e <span style="color:green">social</span> por meio de uma <span style="color:red">bomba atômica</span> de
+                            experiências afim de moldar meu caráter como <span style="color:blue">indivíduo</span>.<br><br>
+                            <span style="color:indigo">Gostos pessoais</span> são um dos exemplos de fatores que moldam nosso <span style="color:midnightblue">caráter</span> e <span style="color:midnightblue">maneira de pensar</span>
+                            como indivíduo. Por esse motivo que <span style="color:gray">Counter Strike:Global Offensive</span> faz parte
+                            desse projeto.
+                        </label>
+
+                        <label id="ladoA_title" style="opacity:1">Seja Bem Vindo<br> ao <span style="color:orangered">Projeto AKZ</span></label>
+                    </div>
+                </div>
+                <div class="ladoB">
+                    <div class="B1"
+                    onmouseover="B1_title.style='opacity:0; transition: all 0.3s ease-in-out'; B1_text.style='opacity:1;  transition: all 0.3s ease-in-out'; B1_img.style ='width:145px; transition: all 0.3s ease-in-out'"
+                    onmouseout="B1_title.style='opacity:1;  transition: all 0.3s ease-in-out'; B1_text.style='opacity:0;  transition: all 0.3s ease-in-out'; B1_img.style ='width:140px; transition: all 0.3s ease-in-out'">
+                        <div class="B1-img">
+                            <img id="B1_img" src="../img/values.png">
+                        </div>
+                        <div class="B1-text">
+                            <label id="B1_text" style="opacity:0"><span style="color:blue">CS:GO</span> agrega <span style="color:goldenrod">valores</span> fundamentais para superar os <span style="color:orangered">desafios</span>
+                                dentro do jogo e alcançar a <span style="color:red">vitória</span>. É possível associar
+                                esses valores até mesmo com o dia a dia de um <span style="color:midnightblue">profissional de tecnologia</span>, 
+                                já que, é preciso tomar as atitudes certas para alcançar seu <span style="color:green">sucesso</span> , assim como no jogo.
+                            </label>
+                            <label id="B1_title" style="opacity:1"><span style="color:rgb(30, 30, 133)">CS:GO</span><br> como Valor</label>
+                        </div>
+
+                    </div>
+                    <div class="B2"
+                    onmouseover="B2_title.style='opacity:0; transition: all 0.3s ease-in-out'; B2_text.style='opacity:1;  transition: all 0.3s ease-in-out'; B2_img.style ='width:145px; transition: all 0.3s ease-in-out'"
+                    onmouseout="B2_title.style='opacity:1;  transition: all 0.3s ease-in-out'; B2_text.style='opacity:0;  transition: all 0.3s ease-in-out'; B2_img.style ='width:140px; transition: all 0.3s ease-in-out'">
+                        <div class="B2-img">
+                            <img id="B2_img" src="../img/arma.png">
+                        </div>
+                        <div class="B2-text">
+                            <label id="B2_text" style="opacity:0">Esse <span style="color:orangered">site</span> tem como finalidade introduzi-lo a esse 
+                                <span style="color:purple">incrível jogo</span> e explicar um pouco desse mundo onde é possível atribuir bons <span style="color:goldenrod">valores</span> para 
+                                sua <span style="color:midnightblue">carreira profissional</span>.
+                            </label>
+                            <label id="B2_title" style="opacity:1">Acesse<br> o <span style="color:gray">menu</span> ao lado</label>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="tela" id="tela-equipes">
-                
+            <div class="footer-akz">
+                <a href="" class="logout" onclick="logoff()"
+                onmouseover="logout_text.style='font-size:21px; transition: all 0.3s ease-in-out'; logout_img.style='width:55px; transition: all 0.3s ease-in-out'"
+                onmouseout="logout_text.style='font-size:20px; transition: all 0.3s ease-in-out'; logout_img.style='width:50px; transition: all 0.3s ease-in-out'">
+                    <div class="logout-text">
+                        <label id="logout_text">Fazer<br> Logout</label>
+                    </div>
+                    <div class="logout-img">
+                        <img id="logout_img" src="../img/logout.png">
+                    </div>
+                </a>
+
             </div>
         </div>
-
     </div>
 
 </body>
 
 </html>
-
-<script>
-
-function mostrar_akz() {
-        sub_header_historia.style.opacity = 0;
-        sub_header_equipes.style.opacity = 0;
-        sub_header_objetivo.style.opacity = 0;
-        sub_header_mapas.style.opacity = 0;
-        sub_header_armas.style.opacity = 0;
-        sub_header_utilitarios.style.opacity = 0;
-        historia_title.style = "";
-        equipes_title.style = "";
-        objetivo_title.style = "";
-        mapas_title.style = "";
-        armas_title.style = "";
-        utilitarios_title.style = "";
-    }
-
-    function mostrar_historia() {
-        sub_header_historia.style.opacity = 1;
-        sub_header_equipes.style.opacity = 0;
-        sub_header_objetivo.style.opacity = 0;
-        sub_header_mapas.style.opacity = 0;
-        sub_header_armas.style.opacity = 0;
-        sub_header_utilitarios.style.opacity = 0;
-        historia_title.style = "color:rgb(252, 135, 68);";
-        equipes_title.style = "";
-        objetivo_title.style = "";
-        mapas_title.style = "";
-        armas_title.style = "";
-        utilitarios_title.style = "";
-        
-    }
-
-    function mostrar_equipes() {
-        sub_header_historia.style.opacity = 0;
-        sub_header_equipes.style.opacity = 1;
-        sub_header_objetivo.style.opacity = 0;
-        sub_header_mapas.style.opacity = 0;
-        sub_header_armas.style.opacity = 0;
-        sub_header_utilitarios.style.opacity = 0;
-        historia_title.style = "";
-        equipes_title.style = "color:rgb(252, 135, 68);";
-        objetivo_title.style = "";
-        mapas_title.style = "";
-        armas_title.style = "";
-        utilitarios_title.style = "";
-    }
-
-    function mostrar_objetivo() {
-        sub_header_historia.style.opacity = 0;
-        sub_header_equipes.style.opacity = 0;
-        sub_header_objetivo.style.opacity = 1;
-        sub_header_mapas.style.opacity = 0;
-        sub_header_armas.style.opacity = 0;
-        sub_header_utilitarios.style.opacity = 0;
-        historia_title.style = "";
-        equipes_title.style = "";
-        objetivo_title.style = "color:rgb(252, 135, 68);";
-        mapas_title.style = "";
-        armas_title.style = "";
-        utilitarios_title.style = "";
-    }
-
-    function mostrar_mapas() {
-        sub_header_historia.style.opacity = 0;
-        sub_header_equipes.style.opacity = 0;
-        sub_header_objetivo.style.opacity = 0;
-        sub_header_mapas.style.opacity = 1;
-        sub_header_armas.style.opacity = 0;
-        sub_header_utilitarios.style.opacity = 0;
-        historia_title.style = "";
-        equipes_title.style = "";
-        objetivo_title.style = "";
-        mapas_title.style = "color:rgb(252, 135, 68);";
-        armas_title.style = "";
-        utilitarios_title.style = "";
-    }
-
-    function mostrar_armas() {
-        sub_header_historia.style.opacity = 0;
-        sub_header_equipes.style.opacity = 0;
-        sub_header_objetivo.style.opacity = 0;
-        sub_header_mapas.style.opacity = 0;
-        sub_header_armas.style.opacity = 1;
-        sub_header_utilitarios.style.opacity = 0;
-        historia_title.style = "";
-        equipes_title.style = "";
-        objetivo_title.style = "";
-        mapas_title.style = "";
-        armas_title.style = "color:rgb(252, 135, 68);";
-        utilitarios_title.style = "";
-    }
-
-    function mostrar_utilitarios() {
-        sub_header_historia.style.opacity = 0;
-        sub_header_equipes.style.opacity = 0;
-        sub_header_objetivo.style.opacity = 0;
-        sub_header_mapas.style.opacity = 0;
-        sub_header_armas.style.opacity = 0;
-        sub_header_utilitarios.style.opacity = 1;
-        historia_title.style = "";
-        equipes_title.style = "";
-        objetivo_title.style = "";
-        mapas_title.style = "";
-        armas_title.style = "";
-        utilitarios_title.style = "color:rgb(252, 135, 68)";
-    }
-
-</script>

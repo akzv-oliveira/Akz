@@ -335,223 +335,272 @@ header {
     width:100vw;
     height:100vh;
     display:flex;
-    justify-content:flex-start;
+    justify-content:center;
+    align-items:center;
     /* background-color:red; */
-}
-/* ----------------------------------------------- */
-
-/* -----------------SUB HEADER-------------------- */
-#sub_header_historia{
-    position:absoute;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    /* background-color:rgb(252, 160, 106); */
-    width:10vw;
-    height:100vh;
-    opacity:0;
-    transition: all 0.3s;
-}
-
-#sub_header_historia .submenu-lateral{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    background-color:rgba(255, 94, 0, 0.589);
-    margin-top: 10px;
-    margin-bottom:10px;
-    width:8vw;
-    height:97vh;
-    border-radius:20px 20px 20px 20px;
-}
-
-#sub_header_equipes{
-    position:absolute;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    /* background-color:rgb(252, 160, 106); */
-    width:9vw;
-    height:100vh;
-    opacity:0;
-    transition: all 0.3s;
-}
-
-#sub_header_equipes .submenu-lateral{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    background-color:rgba(255, 94, 0, 0.589);
-    margin-top: 10px;
-    margin-bottom:10px;
-    width:8vw;
-    height:97vh;
-    border-radius:20px 20px 20px 20px;
-}
-
-#sub_header_objetivo{
-    position:absolute;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    /* background-color:rgb(252, 160, 106); */
-    width:9vw;
-    height:100vh;
-    opacity:0;
-    transition: all 0.3s;
-}
-
-#sub_header_objetivo .submenu-lateral{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    background-color:rgba(255, 94, 0, 0.589);
-    margin-top: 10px;
-    margin-bottom:10px;
-    width:8vw;
-    height:97vh;
-    border-radius:20px 20px 20px 20px;
-}
-
-#sub_header_mapas{
-    position:absolute;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    /* background-color:rgb(252, 160, 106); */
-    width:9vw;
-    height:100vh;
-    opacity:0;
-    transition: all 0.3s;
-}
-
-#sub_header_mapas .submenu-lateral{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    background-color:rgba(255, 94, 0, 0.589);
-    margin-top: 10px;
-    margin-bottom:10px;
-    width:8vw;
-    height:97vh;
-    border-radius:20px 20px 20px 20px;
-}
-
-#sub_header_armas{
-    position:absolute;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    /* background-color:rgb(252, 160, 106); */
-    width:9vw;
-    height:100vh;
-    opacity:0;
-    transition: all 0.3s;
-}
-
-#sub_header_armas .submenu-lateral{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    background-color:rgba(255, 94, 0, 0.589);
-    margin-top: 10px;
-    margin-bottom:10px;
-    width:8vw;
-    height:97vh;
-    border-radius:20px 20px 20px 20px;
-}
-
-#sub_header_utilitarios{
-    position:absolute;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    /* background-color:rgb(252, 160, 106); */
-    width: 9vw;
-    height:100vh;
-    opacity:0;
-    transition: all 0.3s;
-}
-
-#sub_header_utilitarios .submenu-lateral{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    background-color:rgba(255, 94, 0, 0.589);
-    margin-top: 10px;
-    margin-bottom:10px;
-    width:8vw;
-    height:97vh;
-    border-radius:20px 20px 20px 20px;
 }
 /* ----------------------------------------------- */
 
 /* ---------------TELA PRINCIPAL------------------ */
+
+
 .tela-principal{
-    width:100%;
-    height:100vh;
+    width:97%;
+    height:90vh;
     display:flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: green; */
-    
+    /* justify-content: center; */
+    align-items:center;
+    flex-direction: column;
+    border-radius:20px;
+    /* background-color: rgb(202, 202, 202); */
+    /* border: 4px solid rgb(231, 103, 44); */
 }
 
-#tela-akz {
-    position:absolute;
-    z-index:2;
-    /* display:flex; */
-    /* flex-direction: column; */
-    /* justify-content:center; */
-    /* align-items:center; */
-    width:80%;
-    height:96vh;
+.cabecalho{
     /* background-color:red; */
-    opacity:1;
-    transition: all 0.3s;
-    overflow:auto;
+    width:100%;
+    height:80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bem-vindo{
+    background-color:rgb(231, 103, 44);
+    width:30%;
+    height:60px;
+    border-radius:30px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgb(151, 59, 17);
+    margin-top:10px;
+}
+
+.bemvindo-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bemvindo-text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+    width:65%;
+    /* padding-right:20px; */
+}
+
+.bem-vindo #b_usuario{
+    font-size:18px;
+}
+
+.bem-vindo img{
+    width:80px;
+}
+
+
+.bem-vindo label{
+    color:rgb(255, 255, 255);
+    text-align:center;
+}
+
+.tela-akz{
+    /* background-color:red; */
+    width:100%;
+    height:68vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ladoA {
+    width:55%;
+    height:65vh;
+    /* background-color: rgb(46, 46, 46); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:25px;
+    margin: 8px 20px 0 20px;
+    /* border: 2px solid rgb(255, 165, 123); */
+}
+
+.ladoA-img{
+    padding-right:20px;
+}
+
+.ladoA img{
+    width:300px;
+}
+
+.ladoA-text{
+    /* background-color: rgb(51, 36, 16); */
+    width:60%;
+    height:45vh;
+    color:rgb(27, 27, 27);
+    text-align:center;
+    font-size:15px;
+    margin-right:10px;
+    font-weight: 100;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-#tela-akz .A1{
+.ladoA-text #ladoA_txt{
+    width:25%;
+    position: absolute;
+    font-size:15px;
+}
+
+.ladoA-text #ladoA_title{
+    position:absolute;
+    font-size:40px;
+}
+
+.ladoB {
+    width:45%;
+    height:65vh;
+    /* background-color: pink; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 20px 0 25px;
+}
+
+.ladoB .B1{
+    width:100%;
+    height:30vh;
+    /* background-color:rgb(46, 46, 46); */
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom:15px;
+    padding-top:30px;
+}
+
+.B1-text {
+    /* background-color: pink; */
+    width:65%;
+    height:140px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:justify;
+    font-size:15px;
+}
+
+
+/* .B1-img{
+    padding-right:20px;
+} */
+
+.B1-img img{
+    width:140px;
+}
+
+.B1-text #B1_text{
+    width:20%;
+    position: absolute;
+    font-size:15px;
+}
+
+.B1-text #B1_title{
+    padding-top:30px;
+    position:absolute;
+    font-size:40px;
+    padding-right:80px;
+}
+
+.ladoB .B2{
+    width:100%;
+    height:32vh;
+    /* background-color:rgb(46, 46, 46); */
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top:15px;
+}
+
+/* .B2-img{
+    padding-right:20px;
+} */
+
+.B2-text {
+    /* background-color: pink; */
+    height:120px;
+    width:65%;
     display:flex;
     justify-content: center;
     align-items: center;
-    width:100%;
-    height:300px;
-    background-color: rgb(221, 218, 218);
-    border-radius:20px;
-    margin-bottom: 20px;
+    text-align:justify;
+    font-size:15px;
 }
 
-#tela-akz .A2{
+.B2-text #B2_text{
+    width:20%;
+    position: absolute;
+    font-size:15px;
+    margin-top:40px;
+}
+
+.B2-text #B2_title{
+    padding-top:30px;
+    position:absolute;
+    font-size:40px;
+}
+
+.B2-img img{
+    width:140px;
+}
+
+.footer-akz{
+    /* background-color:green; */
+    width:100%;
+    height:10vh;
     display:flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    width:100%;
-    height:300px;
-    background-color: rgb(219, 218, 218);
-    border-radius:20px;
-    margin-bottom: 20px;
 }
 
-
-
-#tela-historia {
-    position:absolute;
-    width:80%;
-    height:96vh;
-    background-color:red;
-    opacity:0;
-    transition: all 0.3s;
+.logout{
+    /* background-color: purple; */
+    width:13%;
+    height:10vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center; 
 }
 
-#tela-equipes {
-    position:absolute;
-    width:80%;
-    height:96vh;
-    background-color:red;
-    opacity:0;
-    transition: all 0.3s;
+.logout-img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
 }
+
+.logout-text{
+    text-align:end;
+    font-size:20px;
+    color:rgb(29, 29, 29);
+    
+}
+
+.footer-akz a{
+    text-decoration: none;
+}
+
+.logout label{
+    cursor: pointer;
+}
+
+.logout img{
+    width:50px;
+}
+
 /* ----------------------------------------------- */

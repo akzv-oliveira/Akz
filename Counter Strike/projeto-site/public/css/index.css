@@ -206,6 +206,15 @@ header {
     padding-bottom:40px;
     text-shadow: 3px 3px black;
 }
+
+.conteudo-video i{
+    position:absolute;
+    color:white;
+    font-size: 15px;
+    text-align:center;
+    padding-top:150px;
+    text-shadow: 1px 1px black;
+}
 /* ----------------------------------------------- */
 
 /* --------------------CSGO----------------------- */
@@ -571,6 +580,14 @@ header {
 
 #awp_img{
     width:300px;
+}
+
+.conteudo-final-espelhado i{
+    margin-top:650px;
+    position:absolute;
+    color:white;
+    text-align:center;
+    text-shadow: 1px 1px black;
 }
 /* ----------------------------------------------- */
 

@@ -24,7 +24,7 @@ header {
     background-color:rgb(32, 32, 32);
     display:flex;
     align-items:center;
-    border-bottom: 2px solid skyblue;
+    border-bottom: 2px solid rgb(252, 135, 68);
 }
 
 header a{
@@ -152,7 +152,7 @@ header a{
     cursor: pointer;
     opacity:1;
     background-color: rgb(22, 22, 22);
-    border:2px solid skyblue;
+    border:2px solid rgb(252, 135, 68);
     border-radius:5px;
     color:white;
     font-size:18px;
@@ -160,7 +160,7 @@ header a{
 }
 
 .btn:hover{
-    color:dodgerblue;
+    color:rgb(252, 135, 68);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -183,7 +183,7 @@ header a{
 }
 
 #img_aguarde{
-    width:30px;  
+    width:80px;  
 }
 
 .cadastro{
@@ -199,7 +199,7 @@ header a{
 }
 
 .cadastro span:hover{
-    color:dodgerblue;
+    color:rgb(252, 135, 68);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -229,7 +229,7 @@ footer {
     align-items:center;
     justify-content:center;
     font-size:15px;
-    border-top: 2px solid skyblue;
+    border-top: 2px solid rgb(252, 135, 68);
     /* position:absolute;
     bottom:0; */
     
