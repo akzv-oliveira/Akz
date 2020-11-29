@@ -1,0 +1,608 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Righteous;
+}
+
+body {
+    width:100%;
+    height:100%;
+    display:flex;
+}
+
+/* ---------------HEADER LATERAL------------------ */
+
+header {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:rgb(32, 32, 32);
+    width:10vw;
+    height:100vh;
+}
+
+.menu-lateral {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:rgb(26, 25, 25);
+    margin-top: 10px;
+    margin-bottom:10px;
+    width:8vw;
+    height:97vh;
+    border-radius:20px;
+}
+
+.logo {
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.akz-space img{
+    width:90px;
+}
+
+.akz-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:25px;
+    text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+    /* background-color: green; */
+}
+.akz-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+.akz-space label{
+    cursor: pointer;
+}
+
+.menu {
+    margin-top:15px;
+    height:78%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom:20px;
+    /* background-color:green; */
+}
+
+.historia {
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* cursor: pointer; */
+    /* background-color:green; */   
+}
+
+.historia label{
+    cursor: pointer;
+}
+
+.historia a{
+    text-decoration: none;
+}
+
+.historia-space img{
+    width:40px;
+}
+
+.historia-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:13px;
+    text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+    /* background-color: green; */
+}
+.historia-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#historia_img {
+    padding-bottom:5px;
+}
+
+.equipes {
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.equipes label{
+    cursor: pointer;
+}
+
+.equipes a{
+    text-decoration: none;
+}
+
+.equipes-space img{
+    width:40px;
+}
+
+.equipes-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:13px;
+    text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+.equipes-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#equipes_img {
+    padding-bottom:5px;
+}
+
+.objetivo{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.objetivo label{
+    cursor: pointer;
+}
+
+.objetivo a{
+    text-decoration: none;
+}
+
+.objetivo-space img{
+    width:40px;
+}
+
+.objetivo-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:13px;
+    text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+.objetivo-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#objetivo_img {
+    padding-bottom:5px;
+}
+
+.mapas{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mapas label{
+    cursor: pointer;
+}
+
+.mapas a{
+    text-decoration: none;
+}
+
+.mapas-space img{
+    width:40px;
+}
+
+.mapas-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:13px;
+    text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+.mapas-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#mapas_img {
+    padding-bottom:5px;
+}
+
+.armas{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.armas label{
+    cursor: pointer;
+}
+
+.armas a{
+    text-decoration: none;
+}
+
+.armas-space img{
+    width:40px;
+}
+
+.armas-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:13px;
+    text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+.armas-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#armas_img {
+    padding-bottom:5px;
+}
+
+.utilitarios{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.utilitarios label{
+    cursor: pointer;
+}
+
+.utilitarios a{
+    text-decoration: none;
+}
+
+.utilitarios-space img{
+    width:40px;
+}
+
+.utilitarios-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:13px;
+    text-align:center;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+}
+
+.utilitarios-space:hover{
+    color:rgb(252, 135, 68);
+    transition:all 0.3s ease-in-out;
+}
+
+#utilitarios_img {
+    padding-bottom:5px;
+}
+
+/* ----------------------------------------------- */
+
+/* ------------------CONTEUDO--------------------- */
+.conteudo {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background-color:red; */
+}
+/* ----------------------------------------------- */
+
+/* ---------------TELA PRINCIPAL------------------ */
+
+
+.tela-principal{
+    width:97%;
+    height:90vh;
+    display:flex;
+    /* justify-content: center; */
+    align-items:center;
+    flex-direction: column;
+    border-radius:20px;
+    /* background-color: rgb(202, 202, 202); */
+    /* border: 4px solid rgb(231, 103, 44); */
+}
+
+.header-equipes{
+    /* background-color:red; */
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.titulo {
+    font-size:30px;
+    margin-right:175px;
+}
+
+.usuario{
+    /* background-color:rgb(231, 103, 44); */
+    width:30%;
+    height:50px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-top:10px; */
+}
+
+.usuario img{
+    width:60px;
+}
+
+.usuario-text{
+    height:30px;
+    font-size:20px;
+    color:rgb(29, 29, 29);
+    margin-right:15px;
+    padding-right:10px;
+    border-right:2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#b_usuario{
+    color:rgb(248, 127, 56)
+}
+
+.tela-akz{
+    /* background-color:rgb(212, 212, 212); */
+    width:100%;
+    height:78vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-equipes{
+    width:100%;
+    height:75vh;
+    /* background-color: orchid; */
+    /* display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; */
+    overflow-y: auto;
+}
+
+.primeira-tela{
+    /* position: absolute;
+    z-index:3;     */
+    width:100%;
+    height:75vh;
+    /* background-color: rgb(148, 74, 74); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s ease-in-out;
+}
+
+.ladoCT{
+    width:50%;
+    height:75vh; 
+    /* background-color: red; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* .ladoTR .TR-img{
+    background-color: red;
+} */
+
+.ladoCT img{
+    width:200px;
+}
+
+.ladoTR{
+    width:50%;
+    height:75vh; 
+    /* background-color: rgb(92, 18, 18); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.ladoTR img{
+    width:200px;
+}
+
+.primeira-tela label{
+    color:rgb(29, 29, 29);
+    font-size:30px;
+    cursor: pointer;
+}
+
+.tela-CT{
+    /* position: absolute; */
+    width:100%;
+    height:75vh;
+    /* background-color: rgb(85, 10, 10); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s ease-in-out;
+}
+
+.tela-CT .CT-img img{
+    width:400px;
+}
+
+.CT-text{
+    /* background-color: red; */
+    width:55%;
+    height:75vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CT-text h1{
+    padding-bottom:20px;
+}
+
+.CT-text h2{
+    padding-top:30px;
+    cursor: pointer;
+    color:rgb(248, 127, 56)
+}
+
+.CT-text label{
+    font-size:30px;
+    text-align: center;
+}
+
+.tela-TR .TR-img img{
+    width:400px;
+}
+
+.TR-text{
+    /* background-color: red; */
+    width:50%;
+    height:75vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TR-text h1{
+    padding-bottom:20px;
+}
+
+.TR-text h2{
+    padding-top:30px;
+    cursor: pointer;
+    color:rgb(248, 127, 56)
+}
+
+.TR-text label{
+    font-size:30px;
+    text-align: center;
+}
+
+.tela-TR{
+    /* position: absolute; */
+    width:100%;
+    height:75vh;
+    /* background-color: rgb(61, 16, 61); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s ease-in-out;
+}
+
+
+
+
+
+.footer-akz{
+    /* background-color:green; */
+    width:100%;
+    height:10vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logout{
+    /* background-color: purple; */
+    width:13%;
+    height:10vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.logout-img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+.logout-text{
+    text-align:end;
+    font-size:20px;
+    color:rgb(29, 29, 29);
+    
+}
+
+.footer-akz a{
+    text-decoration: none;
+}
+
+.logout label{
+    cursor: pointer;
+}
+
+.logout img{
+    width:50px;
+}
+
+/* ----------------------------------------------- */

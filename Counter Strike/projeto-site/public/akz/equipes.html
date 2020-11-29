@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS:GO - Projeto AKZ</title>
-    <link href="../css/historia.css" rel="stylesheet">
+    <link href="../css/equipes.css" rel="stylesheet">
     <link href="../img/Logo Oficial - Icone Aba.png" rel="shortcut icon">
     <script type="text/javascript" src="../funcoes.js"></script>
     <style>
@@ -18,6 +18,26 @@
     let usuario;
 
     verificar_autenticacao();
+
+    function voltar() {
+        primeira_tela.style.display = "block";
+        primeira_tela.style = "z-index:4"
+        tela_CT.style.display = "none";
+        tela_TR.style.display = "none";
+    }
+
+    function CT() {
+        primeira_tela.style.display = "none";
+        tela_CT.style.display = "block"
+        tela_CT.style = "z-index:3"
+    }
+
+    function TR() {
+        primeira_tela.style.display = "none";
+        tela_TR.style.display = "block";
+        tela_TR.style = "z-index:3"
+        
+    }
 
 
 </script>
@@ -83,9 +103,9 @@
 
     <div class="conteudo">
         <div class="tela-principal">
-            <div class="header-historia">
+            <div class="header-equipes">
                 <div class="titulo">
-                    <label>HISTÓRIA DO CS:GO</label>
+                    <label>EQUIPES</label>
                 </div>
 
                 <div class="usuario">
@@ -102,69 +122,53 @@
 
 
             <div class="tela-akz">
-                <div class="tela-historia">
-                    <div class="conteudo-historia">
-                        <div class="historia-img">
-                            <img src="../img/akz/historia.png">
+                <div class="tela-equipes">
+                    <div class="primeira-tela" id="primeira_tela">
+                        <div class="ladoCT" onclick="CT()">
+                            <div class="CT-img">
+                                <img src="../img/akz/CT.png">
+                            </div>
+                            <div class="CT-title">
+                                <label><span style="color:midnightblue">CONTRA-TERRORISTA</span></label>
+                            </div>
                         </div>
-                        <div class="historia-text">
-                            <label>Counter Strike <i>(CS)</i> é um jogo eletrônico de tiro em primeira pessoa lançado em 1999 e
-                                desenvolvido por Mihn Le e Jess Cliffe como um "mod" <i>(conteúdo modificado de algum jogo de 
-                                sua versão original)</i> de Half-Life, um jogo bastante famoso na época.
+                        <div class="ladoTR" onclick="TR()">
+                            <div class="TR-img">
+                                <img src="../img/akz/terrorista.png">
+                            </div>
+                            <div class="TR-title">
+                                <label><span style="color:goldenrod">TERRORISTA</span></label>
+                            </div>
 
-                        </label>
                         </div>
                     </div>
-                    <div class="conteudo-historia2">
-                        <div class="historia-text2">
-                            <label>Após ser adquirido pela Valve Corporation <i>(atual desenvolverdora do jogo)</i>, Counter Strike
-                                se tornou um dos responsáveis pela massificação dos jogos por rede no começo do século, sendo 
-                                considerado o grande responsável pela popularização das LAN Houses no mundo.
-                            </label>
+
+                    <div class="tela-CT" id="tela_CT" style="display:none">
+                        <div class="CT-img">
+                            <img src="../img/akz/Countra Terrorista 2.png">
                         </div>
-                        <div class="historia-img2">
-                            <img src="../img/akz/computer.png">
-                        </div>
-                    </div>
-                    <div class="conteudo-historia">
-                        <div class="historia-img">
-                            <img src="../img/akz/dog tag 2.png">
-                        </div>
-                        <div class="historia-text" id="historia_text3">
-                            <label>Com o passar dos anos, após a popularização do jogo, a Valve Corporation com o auxílio da
-                                Hidden Path Entertainment criou uma séria de versões para o Counter Strike.
-                                A mais popular foi o Counter Strike: Global Offensive lançado em 2012 como uma sequência de 
-                                Counter Strike: Source, na qual contava com versões retrabalhadas de mapas clássicos,
-                                novos mapas, personagens e diversos modos de jogo.
-                            </label>
+                        <div class="CT-text">
+                            <h1><span style="color:midnightblue">CONTRA-TERRORISTAS (CT's)</span></h1>
+                            <label>É a força Antiterrorista do Counter Strike, responsável por defusar, impedir a bomba
+                                e salvar reféns. Possuem um arsenal de armas mais amplo com uma ligeira vantagem tática pelos mapas,
+                                porém suas armas são caras e causam pouco dano. São representados pela cor azul.</label>
+                            <div class="voltar" onclick="voltar()"><h2 >VOLTAR</h2></div>
                         </div>
                     </div>
-                    <div class="conteudo-historia2">
-                        <div class="historia-text2"  id="historia_text4">
-                            <label>Ao longo de cada uma de suas versões, o Counter Strike 
-                            tem vindo a ser o ponto de referência definitivo do nível de perícia de um jogador. Diferentes jogadores
-                            de diferentes equipes ao redor do mundo competem entre si para classificar qual é a melhor equipe de todos os tempos </label>
+
+                    <div class="tela-TR" id="tela_TR" style="display:none">
+                        <div class="TR-text">
+                            <h1><span style="color:goldenrod">TERRORISTAS (TR's)</span></h1>
+                            <label>É a força Terrorista do Counter Strike, responsável por plantar e explodir a bomba ou fazer reféns.
+                                Suas armas são mais poderosas, porém seu armamento é menor e barato. São representados pela cor amarela. </label>
+                            <div class="voltar" onclick="voltar()"><h2 >VOLTAR</h2></div>
                         </div>
-                        <div class="historia-img2">
-                            <img src="../img/akz/Medalha de Serviço.png">
-                        </div>
-                    </div>
-                    <div class="conteudo-historia">
-                        <div class="historia-img">
-                            <img src="../img/akz/trofeu.png">
-                        </div>
-                        <div class="historia-text" id="historia_text5">
-                            <label>Muito mais do que apenas "um jogo", CS:GO se tornou um dos maiores e competitivos jogos eletrônicos
-                                de todos os tempos, toda a sua história e construção ao longo dos anos foi responsável por criar "lendas"
-                                e prestígio ao jogo. Devido a grande quantidade de jogadores hoje em dia, cada vez mais se tornou desafiador
-                                se destacar entre os melhores. Somente aqueles com experiência e resiliência são capazes de se sobresair
-                                e tomar as decisões certas para alcançar a vitória e se tornar um campeão.
-                            </label>
+                        <div class="TR-img">
+                            <img src="../img/akz/terrorista 3.png">
                         </div>
                     </div>
+
                 </div>
-
-
             </div>
 
 
