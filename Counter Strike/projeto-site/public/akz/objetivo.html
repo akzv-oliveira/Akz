@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS:GO - Projeto AKZ</title>
-    <link href="../css/equipes.css" rel="stylesheet">
+    <link href="../css/objetivo.css" rel="stylesheet">
     <link href="../img/Logo Oficial - Icone Aba.png" rel="shortcut icon">
     <script type="text/javascript" src="../funcoes.js"></script>
     <style>
@@ -18,27 +18,6 @@
     let usuario;
 
     verificar_autenticacao();
-
-    function voltar() {
-        primeira_tela.style.display = "block";
-        primeira_tela.style = "z-index:4"
-        tela_CT.style.display = "none";
-        tela_TR.style.display = "none";
-    }
-
-    function CT() {
-        primeira_tela.style.display = "none";
-        tela_CT.style.display = "block"
-        tela_CT.style = "z-index:3"
-    }
-
-    function TR() {
-        primeira_tela.style.display = "none";
-        tela_TR.style.display = "block";
-        tela_TR.style = "z-index:3"
-        
-    }
-
 
 </script>
 
@@ -105,7 +84,7 @@
         <div class="tela-principal">
             <div class="header-equipes">
                 <div class="titulo">
-                    <label>EQUIPES</label>
+                    <label>OBJETIVOS</label>
                 </div>
 
                 <div class="usuario">
@@ -122,56 +101,59 @@
 
 
             <div class="tela-akz">
-                <div class="tela-equipes">
-                    <div class="primeira-tela" id="primeira_tela">
-                        <div class="ladoCT" onclick="CT()"
-                        onmouseover="CT_img.style = 'width:220px; transition:all 0.3s ease-in-out'; CT_title.style = 'font-size:40px; transition:all 0.3s ease-in-out; color:midnightblue'"
-                        onmouseout="CT_img.style = 'width:200px; transition:all 0.3s ease-in-out'; CT_title.style = 'font-size:30px; transition:all 0.3s ease-in-out;'">
-                            <div class="CT-img">
-                                <img id="CT_img" src="../img/akz/CT.png">
-                            </div>
-                            <div class="CT-title">
-                                <label><span id="CT_title">CONTRA-TERRORISTA</span></label>
-                            </div>
+                <div class="tela-objetivo">
+                    <div class="objetivo1"
+                        onmouseover="img_objetivo1.style = 'width:160px; transition:all 0.3s ease-in-out'; text_objetivo1.style='font-size:22px; transition:all 0.3s ease-in-out'"
+                        onmouseout="img_objetivo1.style = 'width:150px; transition:all 0.3s ease-in-out'; text_objetivo1.style='font-size:20px; transition:all 0.3s ease-in-out'">
+                        <div class="img-objetivo1">
+                            <img id="img_objetivo1" src="../img/akz/C4 Alternative.png">
                         </div>
-                        <div class="ladoTR" onclick="TR()"
-                        onmouseover="TR_img.style = 'width:220px; transition:all 0.3s ease-in-out'; TR_title.style = 'font-size:40px; transition:all 0.3s ease-in-out; color:goldenrod'"
-                        onmouseout="TR_img.style = 'width:200px; transition:all 0.3s ease-in-out'; TR_title.style = 'font-size:30px; transition:all 0.3s ease-in-out;'">
-                            <div class="TR-img">
-                                <img id="TR_img" src="../img/akz/terrorista.png">
-                            </div>
-                            <div class="TR-title">
-                                <label><span id="TR_title">TERRORISTA</span></label>
-                            </div>
+                        <div class="text-objetivo1">
+                            <label id="text_objetivo1">Os <span style="color:goldenrod">Terroristas</span> tem como
+                                objetivo plantar a bomba ou <span style="color:darkred">eliminar</span> toda
+                                a <span style="color:midnightblue">equipe adversária</span>.
+                            </label>
 
                         </div>
                     </div>
-
-                    <div class="tela-CT" id="tela_CT" style="display:none">
-                        <div class="CT-img">
-                            <img src="../img/akz/Countra Terrorista 2.png">
+                    <div class="objetivo2"
+                    onmouseover="img_objetivo2.style = 'width:160px; transition:all 0.3s ease-in-out'; text_objetivo2.style='font-size:22px; transition:all 0.3s ease-in-out'"
+                    onmouseout="img_objetivo2.style = 'width:150px; transition:all 0.3s ease-in-out'; text_objetivo2.style='font-size:20px; transition:all 0.3s ease-in-out'">
+                        <div class="img-objetivo2">
+                            <img id="img_objetivo2" src="../img/akz/defuse.png">
                         </div>
-                        <div class="CT-text">
-                            <h1><span style="color:midnightblue">CONTRA-TERRORISTAS (CT's)</span></h1>
-                            <label>É a força Antiterrorista do Counter Strike, responsável por defusar, impedir a bomba
-                                e salvar reféns. Possuem um arsenal de armas mais amplo com uma ligeira vantagem tática pelos mapas,
-                                porém suas armas são caras e causam pouco dano. São representados pela cor azul.</label>
-                            <div class="voltar" onclick="voltar()"><h2 >VOLTAR</h2></div>
-                        </div>
-                    </div>
-
-                    <div class="tela-TR" id="tela_TR" style="display:none">
-                        <div class="TR-text">
-                            <h1><span style="color:goldenrod">TERRORISTAS (TR's)</span></h1>
-                            <label>É a força Terrorista do Counter Strike, responsável por plantar e explodir a bomba ou fazer reféns.
-                                Suas armas são mais poderosas, porém seu armamento é menor e barato. São representados pela cor amarela. </label>
-                            <div class="voltar" onclick="voltar()"><h2 >VOLTAR</h2></div>
-                        </div>
-                        <div class="TR-img">
-                            <img src="../img/akz/terrorista 3.png">
+                        <div class="text-objetivo2">
+                            <label id="text_objetivo2">Os <span style="color:midnightblue">Contra-Terroristas</span> tem como objetivo
+                                defusar a bomba plantada e/ou <span style="color:purple">neutralizar</span>
+                                a <span style="color:goldenrod">equipe adversária</span>.
+                            </label>
                         </div>
                     </div>
-
+                    <div class="objetivo3"
+                    onmouseover="img_objetivo3.style = 'width:160px; transition:all 0.3s ease-in-out'; text_objetivo3.style='font-size:22px; transition:all 0.3s ease-in-out'"
+                    onmouseout="img_objetivo3.style = 'width:150px; transition:all 0.3s ease-in-out'; text_objetivo3.style='font-size:20px; transition:all 0.3s ease-in-out'">
+                        <div class="img-objetivo1">
+                            <img id="img_objetivo3" src="../img/akz/refem.png">
+                        </div>
+                        <div class="text-objetivo1">
+                            <label id="text_objetivo3">Os <span style="color:goldenrod">Terroristas</span> tem como objetivo não deixar a
+                                <span style="color:midnightblue">equipe adversária</span>
+                                resgatar os <span style="color:red">reféns</span>.</label>
+                        </div>
+                    </div>
+                    <div class="objetivo4"
+                    onmouseover="img_objetivo4.style = 'width:160px; transition:all 0.3s ease-in-out'; text_objetivo4.style='font-size:22px; transition:all 0.3s ease-in-out'"
+                    onmouseout="img_objetivo4.style = 'width:150px; transition:all 0.3s ease-in-out'; text_objetivo4.style='font-size:20px; transition:all 0.3s ease-in-out'">
+                        <div class="img-objetivo2">
+                            <img id="img_objetivo4" src="../img/akz/rescue.png">
+                        </div>
+                        <div class="text-objetivo2">
+                            <label id="text_objetivo4">Os <span style="color:midnightblue">Contra-Terroristas</span> tem como objetivo
+                                recuperar os <span style="color:red">reféns</span>
+                                da <span style="color:goldenrod">equipe adversária</span>.
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
 

@@ -109,7 +109,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:white;
+    color:rgb(252, 135, 68);
     font-size:13px;
     text-align:center;
     cursor: pointer;
