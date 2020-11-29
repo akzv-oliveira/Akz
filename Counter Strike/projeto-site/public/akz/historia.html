@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO - Projeto AKZ</title>
+    <link href="../css/historia.css" rel="stylesheet">
+    <link href="../img/Logo Oficial - Icone Aba.png" rel="shortcut icon">
+    <script type="text/javascript" src="../funcoes.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
+</head>
+
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+
+</script>
+
+<body onload="verificar_autenticacao()">
+
+    <header>
+        <div class="menu-lateral">
+            <div class="logo" onclick="mostrar_akz()" id="akz">
+                <a href="akz.html" class="akz-space">
+                    <img src="../img/Logo Oficial.png">
+                    <label id="akz_title">AKZ</label>
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <div class="historia" onclick="mostrar_historia()" id="historia">
+                    <a href="#" class="historia-space">
+                        <img id="historia_img" src="../img/akz/dog tag.png">
+                        <label id="historia_title">HISTÓRIA<br> DO CS:GO</label>
+                    </a>
+                </div>
+
+                <div class="equipes" onclick="mostrar_equipes()" id="equipes">
+                    <a href="#" class="equipes-space">
+                        <img id="equipes_img" src="../img/akz/terrorista.png">
+                        <label id="equipes_title">EQUIPES</label>
+                    </a>
+                </div>
+
+                <div href="#" class="objetivo" onclick="mostrar_objetivo()" id="objetivo">
+                    <a href="#" class="objetivo-space">
+                        <img id="objetivo_title" src="../img/akz/C4 Alternative.png">
+                        <label>OBJETIVO</label>
+                    </a>
+                </div>
+
+                <div href="#" class="mapas" onclick="mostrar_mapas()" id="mapas">
+                    <a href="#" class="mapas-space">
+                        <img id="mapas_img" src="../img/akz/mapa 5.png">
+                        <label id="mapas_title">MAPAS</label>
+                    </a>
+                </div>
+
+                <div href="#" class="armas" onclick="mostrar_armas()" id="armas">
+                    <a href="#" class="armas-space">
+                        <img id="armas_img" src="../img/akz/desert eagle.png">
+                        <label id="armas_title">ARMAS</label>
+                    </a>
+                </div>
+
+                <div href="#" class="utilitarios" onclick="mostrar_utilitarios()" id="utilitarios">
+                    <a href="#" class="utilitarios-space">
+                        <img id="utilitarios_img" src="../img/akz/utilitario.png">
+                        <label id="utilitarios_title">UTILITÁRIOS</label>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="conteudo">
+        <div class="tela-principal">
+            <div class="header-historia">
+                <div class="titulo">
+                    <label>HISTÓRIA DO CS:GO</label>
+                </div>
+
+                <div class="usuario">
+                    <div class="usuario-text">
+                        <b id="b_usuario"></b>
+                    </div>
+                    <div class="usuario-img">
+                        <img src="../img/Logo Oficial Tema Escuro.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="tela-akz">
+                <div class="tela-historia">
+                    <div class="conteudo-historia">
+                        <div class="historia-img">
+                            <img src="../img/akz/historia.png">
+                        </div>
+                        <div class="historia-text">
+                            <label>Counter Strike <i>(CS)</i> é um jogo eletrônico de tiro em primeira pessoa lançado em 1999 e
+                                desenvolvido por Mihn Le e Jess Cliffe como um "mod" <i>(conteúdo modificado de algum jogo de 
+                                sua versão original)</i> de Half-Life, um jogo bastante famoso na época.
+
+                        </label>
+                        </div>
+                    </div>
+                    <div class="conteudo-historia2">
+                        <div class="historia-text2">
+                            <label>Após ser adquirido pela Valve Corporation <i>(atual desenvolverdora do jogo)</i>, Counter Strike
+                                se tornou um dos responsáveis pela massificação dos jogos por rede no começo do século, sendo 
+                                considerado o grande responsável pela popularização das LAN Houses no mundo.
+                            </label>
+                        </div>
+                        <div class="historia-img2">
+                            <img src="../img/akz/computer.png">
+                        </div>
+                    </div>
+                    <div class="conteudo-historia">
+                        <div class="historia-img">
+                            <img src="../img/akz/dog tag 2.png">
+                        </div>
+                        <div class="historia-text" id="historia_text3">
+                            <label>Com o passar dos anos, após a popularização do jogo, a Valve Corporation com o auxílio da
+                                Hidden Path Entertainment criou uma séria de versões para o Counter Strike.
+                                A mais popular foi o Counter Strike: Global Offensive lançado em 2012 como uma sequência de 
+                                Counter Strike: Source, na qual contava com versões retrabalhadas de mapas clássicos,
+                                novos mapas, personagens e diversos modos de jogo.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="conteudo-historia2">
+                        <div class="historia-text2"  id="historia_text4">
+                            <label>Ao longo de cada uma de suas versões, o Counter Strike 
+                            tem vindo a ser o ponto de referência definitivo do nível de perícia de um jogador. Diferentes jogadores
+                            de diferentes equipes ao redor do mundo competem entre si para classificar qual é a melhor equipe de todos os tempos </label>
+                        </div>
+                        <div class="historia-img2">
+                            <img src="../img/akz/Medalha de Serviço.png">
+                        </div>
+                    </div>
+                    <div class="conteudo-historia">
+                        <div class="historia-img">
+                            <img src="../img/akz/trofeu.png">
+                        </div>
+                        <div class="historia-text" id="historia_text5">
+                            <label>Muito mais do que apenas "um jogo", CS:GO se tornou um dos maiores e competitivos jogos eletrônicos
+                                de todos os tempos, toda a sua história e construção ao longo dos anos foi responsável por criar "lendas"
+                                e prestígio ao jogo. Devido a grande quantidade de jogadores hoje em dia, cada vez mais se tornou desafiador
+                                se destacar entre os melhores. Somente aqueles com experiência e resiliência são capazes de se sobresair
+                                e tomar as decisões certas para alcançar a vitória e se tornar um campeão.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-akz">
+                <a href="" class="logout" onclick="logoff()"
+                    onmouseover="logout_text.style='font-size:21px; transition: all 0.3s ease-in-out'; logout_img.style='width:55px; transition: all 0.3s ease-in-out'"
+                    onmouseout="logout_text.style='font-size:20px; transition: all 0.3s ease-in-out'; logout_img.style='width:50px; transition: all 0.3s ease-in-out'">
+                    <div class="logout-text">
+                        <label id="logout_text">Fazer<br> Logout</label>
+                    </div>
+                    <div class="logout-img">
+                        <img id="logout_img" src="../img/logout.png">
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
