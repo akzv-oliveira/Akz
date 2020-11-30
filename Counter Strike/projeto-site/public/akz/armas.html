@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO - Projeto AKZ</title>
+    <link href="../css/armas.css" rel="stylesheet">
+    <link href="../img/Logo Oficial - Icone Aba.png" rel="shortcut icon">
+    <script type="text/javascript" src="../funcoes.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
+</head>
+
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+    function sortear() {
+        for (var i = 0; i < 1; i++) {
+
+            var sorteio = parseInt((Math.random() * 6) + 1);
+
+            var ak47 = sorteio == 1;
+            var m4a4 = sorteio == 2;
+            var desert = sorteio == 3;
+            var awp = sorteio == 4;
+            var usp = sorteio == 5;
+            var glock = sorteio == 6;
+
+            if (ak47) {
+                tela_ak.style.display = "block";
+                tela_ak.style = "z-index:4"
+                tela_m4.style.display = "none";
+                tela_desert.style.display = "none";
+                tela_awp.style.display = "none";
+                tela_usp.style.display = "none";
+                tela_glock.style.display = "none";
+
+            } else if (m4a4) {
+                tela_ak.style.display = "none";
+                tela_m4.style.display = "block";
+                tela_m4.style = "z-index:4"
+                tela_desert.style.display = "none";
+                tela_awp.style.display = "none";
+                tela_usp.style.display = "none";
+                tela_glock.style.display = "none";
+
+            } else if (desert) {
+                tela_ak.style.display = "none";
+                tela_m4.style.display = "none";
+                tela_desert.style.display = "block";
+                tela_desert.style = "z-index:4"
+                tela_awp.style.display = "none";
+                tela_usp.style.display = "none";
+                tela_glock.style.display = "none";
+
+            } else if (awp) {
+                tela_ak.style.display = "none";
+                tela_m4.style.display = "none";
+                tela_desert.style.display = "none";
+                tela_awp.style.display = "block";
+                tela_awp.style = "z-index:4"
+                tela_usp.style.display = "none";
+                tela_glock.style.display = "none";
+
+            } else if (usp) {
+                tela_ak.style.display = "none";
+                tela_m4.style.display = "none";
+                tela_desert.style.display = "none";
+                tela_awp.style.display = "none";
+                tela_usp.style.display = "block";
+                tela_usp.style = "z-index:4"
+                tela_glock.style.display = "none";
+
+            } else if (glock) {
+                tela_ak.style.display = "none";
+                tela_m4.style.display = "none";
+                tela_desert.style.display = "none";
+                tela_awp.style.display = "none";
+                tela_usp.style.display = "none";
+                tela_glock.style.display = "block";
+                tela_glock.style = "z-index:4"
+            }
+        }
+    }
+
+</script>
+
+<body onload="verificar_autenticacao()">
+
+    <header>
+        <div class="menu-lateral">
+            <div class="logo" onclick="mostrar_akz()" id="akz">
+                <a href="akz.html" class="akz-space">
+                    <img src="../img/Logo Oficial.png">
+                    <label id="akz_title">AKZ</label>
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <div class="historia" onclick="mostrar_historia()" id="historia">
+                    <a href="historia.html" class="historia-space">
+                        <img id="historia_img" src="../img/akz/dog tag.png">
+                        <label id="historia_title">HISTÓRIA<br> DO CS:GO</label>
+                    </a>
+                </div>
+
+                <div class="equipes" onclick="mostrar_equipes()" id="equipes">
+                    <a href="equipes.html" class="equipes-space">
+                        <img id="equipes_img" src="../img/akz/terrorista.png">
+                        <label id="equipes_title">EQUIPES</label>
+                    </a>
+                </div>
+
+                <div href="#" class="objetivo" onclick="mostrar_objetivo()" id="objetivo">
+                    <a href="objetivo.html" class="objetivo-space">
+                        <img id="objetivo_title" src="../img/akz/C4 Alternative.png">
+                        <label>OBJETIVOS</label>
+                    </a>
+                </div>
+
+                <div href="#" class="mapas" onclick="mostrar_mapas()" id="mapas">
+                    <a href="mapas.html" class="mapas-space">
+                        <img id="mapas_img" src="../img/akz/mapa 5.png">
+                        <label id="mapas_title">MAPAS</label>
+                    </a>
+                </div>
+
+                <div href="#" class="armas" onclick="mostrar_armas()" id="armas">
+                    <a href="armas.html" class="armas-space">
+                        <img id="armas_img" src="../img/akz/desert eagle.png">
+                        <label id="armas_title">ARMAS</label>
+                    </a>
+                </div>
+
+                <!-- <div href="#" class="utilitarios" onclick="mostrar_utilitarios()" id="utilitarios">
+                    <a href="#" class="utilitarios-space">
+                        <img id="utilitarios_img" src="../img/akz/utilitario.png">
+                        <label id="utilitarios_title">UTILITÁRIOS</label>
+                    </a>
+                </div> -->
+
+            </div>
+        </div>
+    </header>
+
+    <div class="conteudo">
+        <div class="tela-principal">
+            <div class="header-equipes">
+                <div class="titulo">
+                    <label>ARMAS</label>
+                </div>
+
+                <div class="usuario">
+                    <div class="usuario-text">
+                        <b id="b_usuario"></b>
+                    </div>
+                    <div class="usuario-img">
+                        <img src="../img/Logo Oficial Tema Escuro.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="tela-akz">
+                <div class="tela-armas" id="tela_armas">
+                    <div class="sorteio-botão">
+                        <button onclick="sortear()">CLIQUE PARA SORTEAR UMA ARMA</button>
+                    </div>
+                    <div class="tela-sorteio">
+
+                        <div id="tela_ak" style="display:none">
+                            <div class="tela-img">
+                                <img class="AK47" src="../img/akz/Arma AK47.png">
+                            </div>
+                            <div class="tela-detalhes">
+                                <label>NOME: <span style="color:brown">AK-47</span> </label>
+                                <label> TIPO DE ARMA: <span style="color:darkred">RIFLE</span></label>
+                                <label>BALAS POR PENTE: <span style="color:gray">30/220</span></label>
+                                <label>LADO: <span style="color:goldenrod">TERRORISTA</span></label>
+                                <label> PREÇO DE COMPRA: <span style="color:green">$2700</span> </label>
+                            </div>
+                            <div class="tela-dificuldade">
+                                <div class="dificuldade">
+                                    <label>DIFICULDADE:</label>
+                                </div>
+                                <div class="nivel">
+                                    <div class="nivel-dificuldade">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tela_m4" style="display:none">
+                            <div class="tela-img">
+                                <img class="M4" src="../img/akz/Arma M4A4.png">
+                            </div>
+                            <div class="tela-detalhes">
+                                <label>NOME: <span style="color:rgb(10, 10, 63)">M4A4</span> </label>
+                                <label> TIPO DE ARMA: <span style="color:darkred">RIFLE</span></label>
+                                <label>BALAS POR PENTE: <span style="color:gray">30/220</span></label>
+                                <label>LADO: <span style="color:midnightblue">CONTRA-TERRORISTA</span></label>
+                                <label> PREÇO DE COMPRA: <span style="color:green">$3100</span> </label>
+                            </div>
+                            <div class="tela-dificuldade">
+                                <div class="dificuldade">
+                                    <label>DIFICULDADE:</label>
+                                </div>
+                                <div class="nivel" id="nivel_m4">
+                                    <div class="nivel-dificuldade">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tela_desert" style="display:none">
+                            <div class="tela-img">
+                                <img class="desert" src="../img/akz/Arma Desert Eagle.png">
+                            </div>
+                            <div class="tela-detalhes">
+                                <label>NOME: <span style="color:rgb(84, 84, 87)">DESERT-EAGLE</span> </label>
+                                <label> TIPO DE ARMA: <span style="color:darkslategray">PISTOLA</span></label>
+                                <label>BALAS POR PENTE: <span style="color:gray">7/70</span></label>
+                                <label>LADO: <span style="color:rgb(248, 76, 76)">GLOBAL</span></label>
+                                <label> PREÇO DE COMPRA: <span style="color:green">$700</span> </label>
+                            </div>
+                            <div class="tela-dificuldade">
+                                <div class="dificuldade">
+                                    <label>DIFICULDADE:</label>
+                                </div>
+                                <div class="nivel" id="nivel_desert">
+                                    <div class="nivel-dificuldade">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tela_awp" style="display:none">
+                            <div class="tela-img">
+                                <img class="awp" src="../img/awp.png">
+                            </div>
+                            <div class="tela-detalhes">
+                                <label>NOME: <span style="color:darkgreen">AWP</span> </label>
+                                <label> TIPO DE ARMA: <span style="color:rgb(38, 143, 143)">SNIPER</span></label>
+                                <label>BALAS POR PENTE: <span style="color:gray">10/40</span></label>
+                                <label>LADO: <span style="color:rgb(248, 76, 76)">GLOBAL</span></label>
+                                <label> PREÇO DE COMPRA: <span style="color:green">$4750</span> </label>
+                            </div>
+                            <div class="tela-dificuldade">
+                                <div class="dificuldade">
+                                    <label>DIFICULDADE:</label>
+                                </div>
+                                <div class="nivel" id="nivel_desert">
+                                    <div class="nivel-dificuldade">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tela_usp" style="display:none">
+                            <div class="tela-img">
+                                <img class="usp" src="../img/akz/Arma USP.png">
+                            </div>
+                            <div class="tela-detalhes">
+                                <label>NOME: <span style="color:rgb(60, 61, 60)">USP</span> </label>
+                                <label> TIPO DE ARMA: <span style="color:darkslategray">PISTOLA</span></label>
+                                <label>BALAS POR PENTE: <span style="color:gray">13/36</span></label>
+                                <label>LADO: <span style="color:midnightblue">CONTRA-TERRORISTA</span></label>
+                                <label> PREÇO DE COMPRA: <span style="color:green">$200</span> </label>
+                            </div>
+                            <div class="tela-dificuldade">
+                                <div class="dificuldade">
+                                    <label>DIFICULDADE:</label>
+                                </div>
+                                <div class="nivel" id="nivel_usp">
+                                    <div class="nivel-dificuldade">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tela_glock" style="display:none">
+                            <div class="tela-img">
+                                <img class="glock" src="../img/akz/Arma Glock 2.png">
+                            </div>
+                            <div class="tela-detalhes">
+                                <label>NOME: <span style="color:rgb(136, 125, 105)">GLOCK</span> </label>
+                                <label> TIPO DE ARMA: <span style="color:darkslategray">PISTOLA</span></label>
+                                <label>BALAS POR PENTE: <span style="color:gray">20/60</span></label>
+                                <label>LADO: <span style="color:goldenrod">TERRORISTA</span></label>
+                                <label> PREÇO DE COMPRA: <span style="color:green">$200</span> </label>
+                            </div>
+                            <div class="tela-dificuldade">
+                                <div class="dificuldade">
+                                    <label>DIFICULDADE:</label>
+                                </div>
+                                <div class="nivel" id="nivel_glock">
+                                    <div class="nivel-dificuldade">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-akz">
+                <a href="" class="logout" onclick="logoff()"
+                    onmouseover="logout_text.style='font-size:21px; transition: all 0.3s ease-in-out'; logout_img.style='width:55px; transition: all 0.3s ease-in-out'"
+                    onmouseout="logout_text.style='font-size:20px; transition: all 0.3s ease-in-out'; logout_img.style='width:50px; transition: all 0.3s ease-in-out'">
+                    <div class="logout-text">
+                        <label id="logout_text">Fazer<br> Logout</label>
+                    </div>
+                    <div class="logout-img">
+                        <img id="logout_img" src="../img/logout.png">
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
