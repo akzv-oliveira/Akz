@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO - Projeto AKZ</title>
+    <link href="../css/mapas.css" rel="stylesheet">
+    <link href="../img/Logo Oficial - Icone Aba.png" rel="shortcut icon">
+    <script type="text/javascript" src="../funcoes.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
+</head>
+
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+    function voltar() {
+        tela_mapas.style.display = "block";
+        tela_mapas.style = "z-index:3"
+        tela_mirage.style.display = "none";
+        tela_inferno.style.display = "none";
+        tela_d2.style.display = "none";
+        tela_overpass.style.display = "none";
+        tela_train.style.display = "none";
+        tela_nuke.style.display = "none";
+        
+    }
+
+    function mirage() {
+        tela_mapas.style.display = "none";
+        tela_mirage.style.display = "block";
+        tela_mirage.style = "z-index:3"
+    }
+
+    function inferno() {
+        tela_mapas.style.display = "none";
+        tela_inferno.style.display = "block";
+        tela_inferno.style = "z-index:3"
+    }
+
+    function dust2() {
+        tela_mapas.style.display = "none";
+        tela_d2.style.display = "block";
+        tela_d2.style = "z-index:3"
+    }
+
+    function overpass() {
+        tela_mapas.style.display = "none";
+        tela_overpass.style.display = "block";
+        tela_overpass.style = "z-index:3"
+    }
+
+    function train() {
+        tela_mapas.style.display = "none";
+        tela_train.style.display = "block";
+        tela_train.style = "z-index:3"
+    }
+
+    function nuke() {
+        tela_mapas.style.display = "none";
+        tela_nuke.style.display = "block";
+        tela_nuke.style = "z-index:3"
+    }
+
+</script>
+
+<body onload="verificar_autenticacao()">
+
+    <header>
+        <div class="menu-lateral">
+            <div class="logo" onclick="mostrar_akz()" id="akz">
+                <a href="akz.html" class="akz-space">
+                    <img src="../img/Logo Oficial.png">
+                    <label id="akz_title">AKZ</label>
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <div class="historia" onclick="mostrar_historia()" id="historia">
+                    <a href="historia.html" class="historia-space">
+                        <img id="historia_img" src="../img/akz/dog tag.png">
+                        <label id="historia_title">HISTÓRIA<br> DO CS:GO</label>
+                    </a>
+                </div>
+
+                <div class="equipes" onclick="mostrar_equipes()" id="equipes">
+                    <a href="equipes.html" class="equipes-space">
+                        <img id="equipes_img" src="../img/akz/terrorista.png">
+                        <label id="equipes_title">EQUIPES</label>
+                    </a>
+                </div>
+
+                <div href="#" class="objetivo" onclick="mostrar_objetivo()" id="objetivo">
+                    <a href="objetivo.html" class="objetivo-space">
+                        <img id="objetivo_title" src="../img/akz/C4 Alternative.png">
+                        <label>OBJETIVOS</label>
+                    </a>
+                </div>
+
+                <div href="#" class="mapas" onclick="mostrar_mapas()" id="mapas">
+                    <a href="mapas.html" class="mapas-space">
+                        <img id="mapas_img" src="../img/akz/mapa 5.png">
+                        <label id="mapas_title">MAPAS</label>
+                    </a>
+                </div>
+
+                <div href="#" class="armas" onclick="mostrar_armas()" id="armas">
+                    <a href="#" class="armas-space">
+                        <img id="armas_img" src="../img/akz/desert eagle.png">
+                        <label id="armas_title">ARMAS</label>
+                    </a>
+                </div>
+
+                <!-- <div href="#" class="utilitarios" onclick="mostrar_utilitarios()" id="utilitarios">
+                    <a href="#" class="utilitarios-space">
+                        <img id="utilitarios_img" src="../img/akz/utilitario.png">
+                        <label id="utilitarios_title">UTILITÁRIOS</label>
+                    </a>
+                </div> -->
+
+            </div>
+        </div>
+    </header>
+
+    <div class="conteudo">
+        <div class="tela-principal">
+            <div class="header-equipes">
+                <div class="titulo">
+                    <label>MAPAS</label>
+                </div>
+
+                <div class="usuario">
+                    <div class="usuario-text">
+                        <b id="b_usuario"></b>
+                    </div>
+                    <div class="usuario-img">
+                        <img src="../img/Logo Oficial Tema Escuro.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="tela-akz">
+                <div class="tela-mapas" id="tela_mapas">
+                    <div class="A">
+                        <div class="mapa" id="mirage" onclick="mirage()">
+                            <h1>MIRAGE</h1>
+                        </div>
+                        <div class="mapa" id="inferno" onclick="inferno()">
+                            <h1>INFERNO</h1>
+                        </div>
+                        <div class="mapa" id="dust2" onclick="dust2()">
+                            <h1>DUST II</h1>
+                        </div>
+                    </div>
+                    <div class="B">
+                        <div class="mapa" id="overpass" onclick="overpass()">
+                            <h1>OVERPASS</h1>
+                        </div>
+                        <div class="mapa" id="train" onclick="train()">
+                            <h1>TRAIN</h1>
+                        </div>
+                        <div class="mapa" id="nuke" onclick="nuke()">
+                            <h1>NUKE</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tela-mirage" style="display:none" id="tela_mirage">
+                    <div class="video-mapa">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RUuW7d0oDNc" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-mapa">
+                       <div class="titulo-mapa">
+                            <img src="../img/akz/Logo Mirage.png">
+                            <h2>MIRAGE</h2>
+                        </div>
+                        <label>O mapa tem o tema de uma cidade do Oriente Médio, mas por causa de sua semelhança com a arquitetura de estilo marroquino, 
+                            é provável que esteja situado em algum lugar do Marrocos. Assista ao vídeo ao lado de um dos maiores técnicos
+                            profissionais do cenário competitivo, <i>"Giozera"</i>, para descobrir o básico e posições específicas de cada espaço do mapa.
+                        </label>
+                        <h3 onclick="voltar()">VOLTAR</h3>
+                    </div>
+                </div>
+
+                <div class="tela-inferno" style="display:none" id="tela_inferno">
+                    <div class="video-mapa">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QvlehFl1ahU" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-mapa">
+                        <div class="titulo-mapa">
+                            <img src="../img/akz/Logo Inferno.png">
+                            <h2>INFERNO</h2>
+                        </div>
+                        <label>O mapa se passa em uma pequena cidade com arquitetura europeia. Na versão Global Offensive , a presença da facção Separatista sugere que o mapa é 
+                            definitivamente na Itália, como evidenciado pelos sinais escritos em italiano vistos ao redor do mapa. Assista ao vídeo ao lado de um dos maiores técnicos
+                            profissionais do cenário competitivo, <i>"Giozera"</i>, para descobrir o básico e posições específicas de cada espaço do mapa.
+                        </label>
+                        <h3 onclick="voltar()">VOLTAR</h3>
+                    </div>
+                </div>
+
+                <div class="tela-d2" style="display:none" id="tela_d2">
+                    <div class="video-mapa">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6F64gxuRUhA" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-mapa">
+                        <div class="titulo-mapa">
+                            <img src="../img/akz/Logo Dust2.png">
+                            <h2>DUST II</h2>
+                        </div>
+                        <label>O mapa apresenta uma arquitetura islâmica com forte presença de atividades militares em conflito, como Humvees e paredes bombardeadas, 
+                            refletindo uma visão contemporânea do Oriente Médio. Assista ao vídeo ao lado de um dos maiores técnicos
+                            profissionais do cenário competitivo, <i>"Giozera"</i>, para descobrir o básico e posições específicas de cada espaço do mapa.
+                        </label>
+                        <h3 onclick="voltar()">VOLTAR</h3>
+                    </div>
+                </div>
+
+                <div class="tela-overpass" style="display:none" id="tela_overpass">
+                    <div class="video-mapa">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RXsh1yIH3YA" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-mapa">
+                        <div class="titulo-mapa">
+                            <img src="../img/akz/Logo Overpass.png">
+                            <h2>OVERPASS</h2>
+                        </div>
+                        <label>O cenário do mapa é um viaduto do canal e o parque construído acima dele se situa em Berlim, Alemanha. Os CT's deve proteger uma remessa militar, 
+                            enquanto os TR's pode atacar a remessa de frente ou tentar destruir o viaduto propriamente dito bombardeando o pilar abaixo. Assista ao vídeo ao lado de um dos maiores técnicos
+                            profissionais do cenário competitivo, <i>"Giozera"</i>, para descobrir o básico e posições específicas de cada espaço do mapa.
+                        </label>
+                        <h3 onclick="voltar()">VOLTAR</h3>
+                    </div>
+                </div>
+
+                <div class="tela-train" style="display:none" id="tela_train">
+                    <div class="video-mapa">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dsN1N4TiXLE" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-mapa">
+                        <div class="titulo-mapa">
+                            <img src="../img/akz/Logo Train.png">
+                            <h2>TRAIN</h2>
+                        </div>
+                        <label>As facções oficiais neste mapa são SEAL Team 6 e os Balcãs. O local da bomba A contém um vagão de carga descarrilado com dois contêineres nucleares, 
+                            enquanto o local da bomba B contém um vagão com dois motores de trem a diesel em caixa. Assista ao vídeo ao lado de um dos maiores técnicos
+                            profissionais do cenário competitivo, <i>"Giozera"</i>, para descobrir o básico e posições específicas de cada espaço do mapa.
+                        </label>
+                        <h3 onclick="voltar()">VOLTAR</h3>
+                    </div>
+                </div>
+
+                <div class="tela-nuke" style="display:none" id="tela_nuke">
+                    <div class="video-mapa">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/N1_RELJuRfE" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-mapa">
+                        <div class="titulo-mapa">
+                            <img src="../img/akz/Logo Nuke.png">
+                            <h2>NUKE</h2>
+                        </div>
+                        <label>O mapa se passa em um depósito americano contendo materiais nucleares, o mapa gira em torno de uma estrutura central,
+                            com os dois locais de bombardeio sendo sobrepostos um em cima do outro. Assista ao vídeo ao lado de um dos maiores técnicos
+                            profissionais do cenário competitivo, <i>"Giozera"</i>, para descobrir o básico e posições específicas de cada espaço do mapa.
+                        </label>
+                        <h3 onclick="voltar()">VOLTAR</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="footer-akz">
+                <a href="" class="logout" onclick="logoff()"
+                    onmouseover="logout_text.style='font-size:21px; transition: all 0.3s ease-in-out'; logout_img.style='width:55px; transition: all 0.3s ease-in-out'"
+                    onmouseout="logout_text.style='font-size:20px; transition: all 0.3s ease-in-out'; logout_img.style='width:50px; transition: all 0.3s ease-in-out'">
+                    <div class="logout-text">
+                        <label id="logout_text">Fazer<br> Logout</label>
+                    </div>
+                    <div class="logout-img">
+                        <img id="logout_img" src="../img/logout.png">
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

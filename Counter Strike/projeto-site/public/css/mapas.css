@@ -151,7 +151,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:rgb(252, 135, 68);
+    color:white;
     font-size:13px;
     text-align:center;
     cursor: pointer;
@@ -233,7 +233,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:white;
+    color:rgb(252, 135, 68);
     font-size:13px;
     text-align:center;
     cursor: pointer;
@@ -413,158 +413,224 @@ header {
     align-items: center;
 }
 
-.tela-equipes{
+.tela-mapas{
     width:100%;
     height:75vh;
+    /* background-color: orchid; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.primeira-tela{
-    /* position: absolute;
-    z-index:3;     */
+.A{
     width:100%;
-    height:75vh;
-    /* background-color: rgb(148, 74, 74); */
+    height:37.5vh;
+    /* background-color: yellow; */
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mapa {
+    width:300px;
+    height:200px;
+    border-radius:30px;
+    background-color: aqua;
     display:flex;
     justify-content: center;
     align-items: center;
-    transition:all 0.5s ease-in-out;
 }
 
-.ladoCT{
-    width:50%;
-    height:75vh; 
-    /* background-color: red; */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-    font-size:30px;
-}
-
-/* .ladoTR .TR-img{
-    background-color: red;
-} */
-
-.CT-title span{
-    font-size:30px;
-}
-
-.ladoCT img{
-    width:200px;
-}
-
-.ladoTR{
-    width:50%;
-    height:75vh; 
-    /* background-color: rgb(92, 18, 18); */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.TR-title span{
-    font-size:30px;
-}
-
-.ladoTR img{
-    width:200px;
-}
-
-.primeira-tela label{
-    color:rgb(29, 29, 29);
-    font-size:30px;
-    cursor: pointer;
-}
-
-.tela-CT{
-    /* position: absolute; */
-    width:100%;
-    height:75vh;
-    /* background-color: rgb(85, 10, 10); */
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    transition:all 0.5s ease-in-out;
-}
-
-.tela-CT .CT-img img{
-    width:400px;
-}
-
-.CT-text{
-    /* background-color: red; */
-    width:55%;
-    height:75vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.CT-text h1{
-    padding-bottom:20px;
-}
-
-.CT-text h2{
-    padding-top:30px;
-    cursor: pointer;
-    color:rgb(248, 127, 56)
-}
-
-.CT-text label{
-    font-size:30px;
+.mapa h1{
+    color: white;
+    font-weight:100;
     text-align: center;
 }
 
-.tela-TR .TR-img img{
-    width:400px;
-}
-
-.TR-text{
-    /* background-color: red; */
-    width:50%;
-    height:75vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.TR-text h1{
-    padding-bottom:20px;
-}
-
-.TR-text h2{
-    padding-top:30px;
-    cursor: pointer;
-    color:rgb(248, 127, 56)
-}
-
-.TR-text label{
-    font-size:30px;
-    text-align: center;
-}
-
-.tela-TR{
-    /* position: absolute; */
+.B{
     width:100%;
-    height:75vh;
-    /* background-color: rgb(61, 16, 61); */
+    height:37.5vh;
+    /* background-color: rgb(0, 60, 255); */
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mirage{
+    background-image: url(../img/akz/Mirage\ Escurecida.png);
+    background-size:cover;
+    cursor: pointer;
+}
+
+.tela-mirage{
+    width:100%;
+    height:55vh;
+    background-color: rgb(253, 172, 125);
     display:flex;
     justify-content: center;
     align-items: center;
-    transition:all 0.5s ease-in-out;
+    border-radius:30px;
 }
 
+.tela-inferno{
+    width:100%;
+    height:55vh;
+    background-color: rgb(253, 172, 125);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+}
 
+.tela-d2{
+    width:100%;
+    height:55vh;
+    background-color: rgb(253, 172, 125);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+}
+
+.tela-overpass{
+    width:100%;
+    height:55vh;
+    background-color: rgb(253, 172, 125);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+}
+
+.tela-train{
+    width:100%;
+    height:55vh;
+    background-color: rgb(253, 172, 125);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+}
+
+.tela-nuke{
+    width:100%;
+    height:55vh;
+    background-color: rgb(253, 172, 125);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+}
+
+.titulo-mapa {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:10px;
+    /* background-color: yellow; */
+}
+
+.titulo-mapa img{
+    width:90px;
+    padding-right:10px;
+}
+
+.titulo-mapa h2{
+    font-weight: 100;
+    font-size:50px;
+    color:rgb(41, 41, 41)
+}
+
+.text-mapa label{
+    text-align: center;
+    color:rgb(41, 41, 41);
+    /* background-color: yellow; */
+    width:90%;
+    font-size:20px;
+}
+
+#tela_inferno .text-mapa label{
+    font-size:18px;
+}
+
+#tela_overpass .text-mapa label{
+    font-size:17px;
+}
+
+#tela_train .text-mapa label{
+    font-size:19px;
+}
+
+#tela_nuke .text-mapa label{
+    font-size:20px;
+}
+
+.text-mapa h3{
+    padding-top:10px;
+    cursor: pointer;
+    color:rgb(151, 86, 43)
+}
+
+.video-mapa{
+    width:50%;
+    height:55vh;
+    background-color:rgb(29, 29, 29);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:25px;
+}
+
+.text-mapa{
+    width:50%;
+    height:55vh;
+    background-color: rgb(253, 172, 125);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:25px;
+}
+
+#inferno{
+    background-image: url(../img/akz/Inferno\ Escurecida.png);
+    background-size:cover;
+    cursor: pointer;
+}
+
+#dust2{
+    background-image: url(../img/akz/Dust\ 2\ Escurecida.png);
+    background-size:cover;
+    cursor: pointer;
+}
+
+#overpass{
+    background-image: url(../img/akz/Overpass\ Escurecida.png);
+    background-size:cover;
+    cursor: pointer;
+}
+
+#train{
+    background-image: url(../img/akz/Train\ Escurecida.png);
+    background-size:cover;
+    cursor: pointer;
+    
+}
+
+#nuke{
+    background-image: url(../img/akz/Nuke\ Escurecida.png);
+    background-size:cover;
+    cursor: pointer;
+}
 
 
 
 .footer-akz{
     /* background-color:green; */
+    /* position:fixed;
+    bottom:0;
+    margin: 0 162px 17px 0; */
     width:100%;
     height:10vh;
     display:flex;
